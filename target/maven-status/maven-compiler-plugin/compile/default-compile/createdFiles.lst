@@ -1,0 +1,6 @@
+com/example/awesomehugoblog/repository/ArticleRepository.class
+com/example/awesomehugoblog/controller/ArticleController.class
+com/example/awesomehugoblog/controller/AdminController.class
+com/example/awesomehugoblog/service/ArticleService.class
+com/example/awesomehugoblog/Application.class
+com/example/awesomehugoblog/entity/Article.class
