@@ -3,56 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <title>Qian's Blog</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/blog-style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .welcome-section {
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .welcome-emoji {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .welcome-quote {
+            font-style: italic;
+            color: #667eea;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-section {
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            color: #667eea;
+        }
+        
+        .stats-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/">Qian's Blog</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">🏠主页</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/articles">📚文章</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/timeline">⏱时间轴</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/tags">🔖标签</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">🙋🏻♂️关于</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/links">🤝友链</a>
-                </li>
+    <header class="blog-header">
+        <div class="header-content">
+            <h1 class="blog-title">Qian's Blog</h1>
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="搜索...">
+            </div>
+        </div>
+    </header>
+
+    <nav class="blog-navbar">
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="/" class="nav-link active">🏠主页</a></li>
+                <li><a href="/articles" class="nav-link">📚文章</a></li>
+                <li><a href="/timeline" class="nav-link">⏱时间轴</a></li>
+                <li><a href="/tags" class="nav-link">🔖标签</a></li>
+                <li><a href="/about" class="nav-link">🙋🏻♂️关于</a></li>
+                <li><a href="/links" class="nav-link">🤝友链</a></li>
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="🔍搜索" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">搜索</button>
-            </form>
+        </div>
+    </nav>
+
+    <div class="blog-content">
+        <div class="blog-container fade-in">
+            <div class="welcome-section">
+                <div class="welcome-emoji">(〃‘▽’〃)</div>
+                <div class="welcome-quote">🧨学而时习之，不亦说乎？有朋自远方来，不亦乐乎？</div>
+                <h2>👏🏼欢迎光临圣乾(sQian's)的博客</h2>
+            </div>
+            
+            <div class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-number">25</div>
+                    <div class="stat-label">文章总数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">18</div>
+                    <div class="stat-label">标签总数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">分类总数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">友情链接</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="blog-container fade-in">
+            <h3>👇联系方式</h3>
+            <div class="contact-section">
+                <div class="contact-item">
+                    <div class="contact-icon">🧱</div>
+                    <div>博客: <a href="/" class="blog-link">https://sqian.top</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">👨🏻💻</div>
+                    <div>技术: <a href="https://github.com/sqian" class="blog-link" target="_blank">GitHub</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📕</div>
+                    <div>阅读-电影: <a href="#" class="blog-link">豆瓣</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🏖</div>
+                    <div>生活: <a href="#" class="blog-link">Instagram</a></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="blog-container fade-in">
+            <h3>🆕 最新文章</h3>
+            <div th:if="${latestArticles != null and !#lists.isEmpty(latestArticles)}">
+                <div class="blog-card" th:each="article : ${latestArticles}">
+                    <h4 class="blog-card-title" th:text="${article.title}">文章标题</h4>
+                    <div class="blog-card-meta">
+                        <i class="bi bi-calendar me-1"></i>
+                        <span th:text="${#temporals.format(article.createdAt, 'yyyy-MM-dd HH:mm')}">发布时间</span>
+                        <span class="mx-2">|</span>
+                        <i class="bi bi-folder me-1"></i>
+                        <span th:if="${article.category}" th:text="${article.category.name}">分类</span>
+                        <span th:if="${article.category == null}">未分类</span>
+                    </div>
+                    <p class="blog-card-text" th:text="${#strings.abbreviate(article.content, 150)}">文章摘要</p>
+                    <a th:href="@{/article/{id}(id=${article.id})}" class="blog-btn">阅读更多</a>
+                </div>
+            </div>
+            <div th:if="${latestArticles == null or #lists.isEmpty(latestArticles)}">
+                <p>暂无文章</p>
+            </div>
         </div>
     </div>
-</nav>
 
-<div class="container mt-4">
-    <div class="jumbotron">
-        <h1 class="display-4">👏🏼欢迎光临圣乾(sQian's)的博客</h1>
-        <p class="lead">🧨学而时习之，不亦说乎？有朋自远方来，不亦乐乎？</p>
-        <hr class="my-4">
-        <p>👇联系方式</p>
-        <ul>
-            <li>🧱博客</li>
-            <li>👨🏻💻技术</li>
-            <li>📕阅读-电影</li>
-            <li>🏖生活</li>
-        </ul>
-    </div>
-</div>
+    <footer class="blog-footer">
+        <div class="blog-content">
+            <p>&copy; 2025 Qian's Blog. All rights reserved.</p>
+        </div>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 添加页面加载动画
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.blog-card, .stat-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'all 0.5s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+            
+            // 为导航链接添加点击效果
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>

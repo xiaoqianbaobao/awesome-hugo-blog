@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录 - Qian's Blog</title>
+    <link href="/css/geek-style.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0f0f0f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-card {
+            background-color: #1a1a1a;
+            border: 1px solid #00ff00;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+        .login-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .login-header h3 {
+            color: #00ff00;
+            margin-bottom: 10px;
+        }
+        .login-header p {
+            color: #00aaaa;
+            margin-bottom: 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-label {
+            color: #00ff00;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+            background-color: #2a2a2a;
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .input-group i {
+            color: #00ff00;
+            padding: 0 10px;
+        }
+        .form-control {
+            background-color: transparent;
+            border: none;
+            color: #00ff00;
+            flex: 1;
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+        }
+        .form-control:focus {
+            outline: none;
+        }
+        .btn-login {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .alert {
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .alert-danger {
+            background-color: #2a2a2a;
+            border: 1px solid #ff5555;
+            color: #ff5555;
+        }
+        .form-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #00aaaa;
+        }
+        .form-link a {
+            color: #00ffff;
+            text-decoration: none;
+        }
+        .form-link a:hover {
+            color: #ffff00;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <div class="login-header">
+            <h3>管理员登录</h3>
+            <p>Qian's Blog</p>
+        </div>
+        <form th:action="@{/login}" method="post">
+            <div th:if="${error}" class="alert alert-danger" role="alert">
+                <i class="bi bi-exclamation-triangle me-2"></i>
+                <span th:text="${error}">错误信息</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="username" class="form-label">用户名</label>
+                <div class="input-group">
+                    <i class="bi bi-person"></i>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="请输入用户名" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="password" class="form-label">密码</label>
+                <div class="input-group">
+                    <i class="bi bi-lock"></i>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码" required>
+                </div>
+            </div>
+            
+            <button type="submit" class="geek-btn btn-login">登录</button>
+        </form>
+        
+        <div class="form-link">
+            <p>还没有账号？<a href="/register">立即注册</a></p>
+        </div>
+    </div>
+
+    <script>
+        // 添加输入框焦点效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.parentElement.style.boxShadow = '0 0 10px #00ff00';
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.parentElement.parentElement.style.boxShadow = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>关于 - Qian's Blog</title>
+    <link href="/css/blog-style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .profile-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #667eea;
+            margin: 0 auto 1rem;
+        }
+        
+        .profile-name {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .profile-title {
+            color: #777;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .skill-section {
+            margin: 2rem 0;
+        }
+        
+        .skill-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        
+        .skill-bar {
+            height: 12px;
+            background-color: #f0f0f0;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .skill-level {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 6px;
+        }
+        
+        .contact-section {
+            margin: 2rem 0;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <header class="blog-header">
+        <div class="header-content">
+            <h1 class="blog-title">Qian's Blog</h1>
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="搜索...">
+            </div>
+        </div>
+    </header>
+
+    <nav class="blog-navbar">
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="/" class="nav-link">🏠主页</a></li>
+                <li><a href="/articles" class="nav-link">📚文章</a></li>
+                <li><a href="/timeline" class="nav-link">⏱时间轴</a></li>
+                <li><a href="/tags" class="nav-link">🔖标签</a></li>
+                <li><a href="/about" class="nav-link active">🙋🏻♂️关于</a></li>
+                <li><a href="/links" class="nav-link">🤝友链</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="blog-content">
+        <div class="blog-container fade-in">
+            <div class="profile-header">
+                <div style="width: 150px; height: 150px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 4rem;">
+                    😎
+                </div>
+                <h1 class="profile-name">Qian</h1>
+                <div class="profile-title">全栈开发工程师 | 技术博主</div>
+                <p>热爱技术，喜欢分享</p>
+            </div>
+            
+            <div class="profile-content">
+                <h3>个人简介</h3>
+                <p class="blog-readable">我是一名热爱技术的全栈开发工程师，专注于Java、Spring Boot、前端开发等领域。拥有5年以上的开发经验，喜欢分享技术知识和实践经验。</p>
+                <p class="blog-readable">在业余时间，我喜欢研究新技术、写博客、参与开源项目，不断提升自己的技术水平。</p>
+                
+                <div class="skill-section">
+                    <h3>技能栈</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Java/Spring Boot</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>前端开发 (HTML/CSS/JavaScript)</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>数据库 (MySQL/PostgreSQL)</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>微服务架构</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="blog-container fade-in">
+            <h3>联系我</h3>
+            <div class="contact-section">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>邮箱</h4>
+                        <p class="mb-0">qian@example.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="bi bi-github"></i>
+                    </div>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p class="mb-0">github.com/qian</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p class="mb-0">linkedin.com/in/qian</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <!-- 最新文章 -->
+            <div class="blog-container">
+                <h3>🆕 最新文章</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li class="blog-card">
+                        <h4>Spring Boot实战教程</h4>
+                        <span class="blog-card-meta">2025-10-15</span>
+                    </li>
+                    <li class="blog-card">
+                        <h4>Java并发编程详解</h4>
+                        <span class="blog-card-meta">2025-10-12</span>
+                    </li>
+                    <li class="blog-card">
+                        <h4>MySQL性能优化技巧</h4>
+                        <span class="blog-card-meta">2025-10-10</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="blog-footer">
+        <div class="blog-content">
+            <p>&copy; 2025 Qian's Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 添加技能条动画效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const skillBars = document.querySelectorAll('.skill-level');
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.transition = 'width 1s ease-in-out';
+                    bar.style.width = width;
+                }, 300);
+            });
+            
+            // 为卡片添加悬停效果
+            const cards = document.querySelectorAll('.blog-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateX(5px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateX(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

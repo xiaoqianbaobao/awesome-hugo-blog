@@ -1,0 +1,210 @@
+/* 极客风格终端样式 */
+body {
+    background-color: #0f0f0f;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.geek-header {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #00ff00;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.geek-title {
+    color: #00ff00;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.geek-navbar {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #00ff00;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.geek-nav-link {
+    color: #00ff00 !important;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.geek-nav-link:hover {
+    color: #ffff00 !important;
+    text-decoration: underline;
+}
+
+.geek-nav-link.active {
+    color: #ffff00 !important;
+    font-weight: bold;
+}
+
+.geek-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.geek-container {
+    background-color: #1a1a1a;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.geek-card {
+    background-color: #1a1a1a;
+    border-left: 3px solid #00ff00;
+    border-radius: 0 5px 5px 0;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.geek-card:hover {
+    background-color: #2a2a2a;
+    transform: translateX(5px);
+}
+
+.geek-card-title {
+    color: #00ff00;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.geek-card-text {
+    color: #00ff00;
+    margin-bottom: 15px;
+}
+
+.geek-card-meta {
+    color: #00aaaa;
+    font-size: 0.9rem;
+}
+
+.geek-btn {
+    background-color: #1a1a1a;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    border-radius: 3px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Courier New', monospace;
+}
+
+.geek-btn:hover {
+    background-color: #00ff00;
+    color: #000;
+    text-decoration: none;
+}
+
+.geek-form-control {
+    background-color: #1a1a1a;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-family: 'Courier New', monospace;
+}
+
+.geek-form-control:focus {
+    outline: none;
+    border-color: #ffff00;
+    box-shadow: 0 0 5px #ffff00;
+}
+
+.geek-footer {
+    background-color: #1a1a1a;
+    border-top: 1px solid #00ff00;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    color: #00ff00;
+}
+
+.geek-link {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+.geek-link:hover {
+    color: #ffff00;
+    text-decoration: underline;
+}
+
+/* 提高可读性的优化 */
+.geek-readable {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #00ff00;
+}
+
+.geek-readable h1, .geek-readable h2, .geek-readable h3 {
+    color: #00ff00;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.geek-readable p {
+    margin-bottom: 15px;
+}
+
+.geek-readable code {
+    background-color: #2a2a2a;
+    color: #00ffff;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.geek-readable pre {
+    background-color: #2a2a2a;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+.geek-tag {
+    background-color: #2a2a2a;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    border-radius: 3px;
+    padding: 3px 8px;
+    margin-right: 5px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.geek-tag:hover {
+    background-color: #00ff00;
+    color: #000;
+    text-decoration: none;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .geek-content {
+        padding: 0 10px;
+    }
+    
+    .geek-container {
+        padding: 15px;
+    }
+    
+    body {
+        font-size: 14px;
+    }
+    
+    .geek-readable {
+        font-size: 16px;
+    }
+}

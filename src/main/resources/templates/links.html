@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>友链 - Qian's Blog</title>
+    <link href="/css/blog-style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .friend-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 2rem 0;
+        }
+        
+        .friend-card {
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .friend-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .friend-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #667eea;
+            margin: 0 auto 1rem;
+        }
+        
+        .friend-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .friend-desc {
+            color: #777;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .exchange-card {
+            margin-top: 3rem;
+        }
+        
+        .stats-card {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="blog-header">
+        <div class="header-content">
+            <h1 class="blog-title">Qian's Blog</h1>
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="搜索...">
+            </div>
+        </div>
+    </header>
+
+    <nav class="blog-navbar">
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="/" class="nav-link">🏠主页</a></li>
+                <li><a href="/articles" class="nav-link">📚文章</a></li>
+                <li><a href="/timeline" class="nav-link">⏱时间轴</a></li>
+                <li><a href="/tags" class="nav-link">🔖标签</a></li>
+                <li><a href="/about" class="nav-link">🙋🏻♂️关于</a></li>
+                <li><a href="/links" class="nav-link active">🤝友链</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="blog-content">
+        <div class="blog-container fade-in">
+            <h1>🤝 友情链接</h1>
+            <p>与优秀的博主们建立联系</p>
+            
+            <div class="stats-card">
+                <div class="stat-item">
+                    <div class="stat-number">24</div>
+                    <div class="stat-label">友情链接</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">156</div>
+                    <div class="stat-label">总访问量</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">技术博客</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="blog-container fade-in">
+            <h3>🔗 友情链接</h3>
+            <div class="friend-links">
+                <div class="blog-card friend-card">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">
+                        👨‍💻
+                    </div>
+                    <h4 class="friend-name">技术博客</h4>
+                    <p class="friend-desc">分享编程技术与经验</p>
+                    <a href="https://example.com" target="_blank" class="blog-btn">访问博客</a>
+                </div>
+                
+                <div class="blog-card friend-card">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">
+                        🎨
+                    </div>
+                    <h4 class="friend-name">前端开发</h4>
+                    <p class="friend-desc">前端技术与设计</p>
+                    <a href="https://example.com" target="_blank" class="blog-btn">访问博客</a>
+                </div>
+                
+                <div class="blog-card friend-card">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">
+                        🧠
+                    </div>
+                    <h4 class="friend-name">算法与数据结构</h4>
+                    <p class="friend-desc">算法学习与面试准备</p>
+                    <a href="https://example.com" target="_blank" class="blog-btn">访问博客</a>
+                </div>
+                
+                <div class="blog-card friend-card">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">
+                        ☁️
+                    </div>
+                    <h4 class="friend-name">云计算技术</h4>
+                    <p class="friend-desc">云原生与容器技术</p>
+                    <a href="https://example.com" target="_blank" class="blog-btn">访问博客</a>
+                </div>
+                
+                <div class="blog-card friend-card">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">
+                        🗄️
+                    </div>
+                    <h4 class="friend-name">数据库技术</h4>
+                    <p class="friend-desc">数据库优化与管理</p>
+                    <a href="https://example.com" target="_blank" class="blog-btn">访问博客</a>
+                </div>
+                
+                <div class="blog-card friend-card">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">
+                        🚀
+                    </div>
+                    <h4 class="friend-name">DevOps实践</h4>
+                    <p class="friend-desc">持续集成与部署</p>
+                    <a href="https://example.com" target="_blank" class="blog-btn">访问博客</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="blog-container exchange-card fade-in">
+            <h3>🔗 交换友链</h3>
+            <p>如果您希望与本站交换友链，请填写以下信息：</p>
+            <form>
+                <div class="mb-3">
+                    <label class="blog-card-meta">博客名称</label>
+                    <input type="text" class="blog-form-control" placeholder="请输入博客名称">
+                </div>
+                <div class="mb-3">
+                    <label class="blog-card-meta">博客地址</label>
+                    <input type="url" class="blog-form-control" placeholder="请输入博客地址">
+                </div>
+                <div class="mb-3">
+                    <label class="blog-card-meta">博客描述</label>
+                    <textarea class="blog-form-control" rows="3" placeholder="请输入博客描述"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="blog-card-meta">联系邮箱</label>
+                    <input type="email" class="blog-form-control" placeholder="请输入联系邮箱">
+                </div>
+                <button type="submit" class="blog-btn">提交申请</button>
+            </form>
+        </div>
+        
+        <div class="sidebar">
+            <!-- 友链说明 -->
+            <div class="blog-container">
+                <h3>📝 友链说明</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li class="blog-card">本站优先收录技术类博客</li>
+                    <li class="blog-card">内容原创且更新频率较高</li>
+                    <li class="blog-card">网站无恶意广告和弹窗</li>
+                    <li class="blog-card">PR≥2或有一定访问量</li>
+                    <li class="blog-card">交换友链需在贵站添加本站链接</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="blog-footer">
+        <div class="blog-content">
+            <p>&copy; 2025 Qian's Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 添加交互效果
+        document.addEventListener('DOMContentLoaded', function() {
+            // 为卡片添加悬停效果
+            const cards = document.querySelectorAll('.blog-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // 为按钮添加悬停效果
+            const buttons = document.querySelectorAll('.blog-btn');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px)';
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

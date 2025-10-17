@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>标签 - Qian's Blog</title>
+    <link href="/css/blog-style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <header class="blog-header">
+        <div class="header-content">
+            <h1 class="blog-title">Qian's Blog</h1>
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="搜索...">
+            </div>
+        </div>
+    </header>
+
+    <nav class="blog-navbar">
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="/" class="nav-link">🏠主页</a></li>
+                <li><a href="/articles" class="nav-link">📚文章</a></li>
+                <li><a href="/timeline" class="nav-link">⏱时间轴</a></li>
+                <li><a href="/tags" class="nav-link active">🔖标签</a></li>
+                <li><a href="/about" class="nav-link">🙋🏻♂️关于</a></li>
+                <li><a href="/links" class="nav-link">🤝友链</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="blog-content">
+        <div class="blog-container fade-in">
+            <h1>🔖 标签</h1>
+            <p>探索感兴趣的内容</p>
+            
+            <div class="tag-cloud">
+                <span class="blog-tag">技术</span>
+                <span class="blog-tag">生活</span>
+                <span class="blog-tag">Java</span>
+                <span class="blog-tag">Spring Boot</span>
+                <span class="blog-tag">博客</span>
+                <span class="blog-tag">开发</span>
+                <span class="blog-tag">MySQL</span>
+                <span class="blog-tag">Thymeleaf</span>
+                <span class="blog-tag">Web开发</span>
+                <span class="blog-tag">数据库</span>
+                <span class="blog-tag">前端</span>
+                <span class="blog-tag">Linux</span>
+                <span class="blog-tag">算法</span>
+                <span class="blog-tag">设计模式</span>
+                <span class="blog-tag">微服务</span>
+                <span class="blog-tag">Docker</span>
+                <span class="blog-tag">Kubernetes</span>
+                <span class="blog-tag">云计算</span>
+            </div>
+        </div>
+        
+        <div class="blog-container fade-in">
+            <h3>标签统计</h3>
+            <div style="display: flex; justify-content: space-around; text-align: center; margin-bottom: 30px;">
+                <div class="stat-card">
+                    <div class="stat-number">18</div>
+                    <div class="stat-label">总标签数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">25</div>
+                    <div class="stat-label">文章总数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">热门标签</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="blog-container fade-in">
+            <h3>热门标签</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                <div class="blog-card" style="flex: 1; min-width: 200px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>Java</span>
+                        <span class="blog-tag">12篇文章</span>
+                    </div>
+                </div>
+                <div class="blog-card" style="flex: 1; min-width: 200px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>Spring Boot</span>
+                        <span class="blog-tag">8篇文章</span>
+                    </div>
+                </div>
+                <div class="blog-card" style="flex: 1; min-width: 200px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>MySQL</span>
+                        <span class="blog-tag">6篇文章</span>
+                    </div>
+                </div>
+                <div class="blog-card" style="flex: 1; min-width: 200px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>Web开发</span>
+                        <span class="blog-tag">5篇文章</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <!-- 搜索标签 -->
+            <div class="blog-container">
+                <h3>🔍 搜索标签</h3>
+                <form class="search-form">
+                    <input type="text" class="blog-form-control" placeholder="输入标签名称">
+                    <button type="submit" class="blog-btn">搜索</button>
+                </form>
+            </div>
+            
+            <!-- 标签分类 -->
+            <div class="blog-container">
+                <h3>📂 标签分类</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li class="blog-card">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span>技术</span>
+                            <span class="blog-tag">12</span>
+                        </div>
+                    </li>
+                    <li class="blog-card">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span>生活</span>
+                            <span class="blog-tag">5</span>
+                        </div>
+                    </li>
+                    <li class="blog-card">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span>学习</span>
+                            <span class="blog-tag">8</span>
+                        </div>
+                    </li>
+                    <li class="blog-card">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span>分享</span>
+                            <span class="blog-tag">3</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="blog-footer">
+        <div class="blog-content">
+            <p>&copy; 2025 Qian's Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 添加标签点击交互效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const tagItems = document.querySelectorAll('.blog-tag');
+            tagItems.forEach(tag => {
+                tag.addEventListener('click', function() {
+                    // 添加点击动画效果
+                    this.style.transform = 'scale(1.2)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 300);
+                    
+                    // 这里可以添加根据标签筛选文章的逻辑
+                    console.log('您点击了标签: ' + this.textContent);
+                });
+            });
+            
+            // 为按钮添加点击效果
+            const buttons = document.querySelectorAll('.blog-btn');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px)';
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,817 @@
+[1mApache Maven 3.6.3[m
+Maven home: /usr/share/maven
+Java version: 11.0.28, vendor: Ubuntu, runtime: /usr/lib/jvm/java-11-openjdk-amd64
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "6.6.87.2-microsoft-standard-wsl2", arch: "amd64", family: "unix"
+[[1;36mDEBUG[m] Created new class realm maven.api
+[[1;36mDEBUG[m] Importing foreign packages into class realm maven.api
+[[1;36mDEBUG[m]   Imported: javax.annotation.* < plexus.core
+[[1;36mDEBUG[m]   Imported: javax.annotation.security.* < plexus.core
+[[1;36mDEBUG[m]   Imported: javax.enterprise.inject.* < plexus.core
+[[1;36mDEBUG[m]   Imported: javax.enterprise.util.* < plexus.core
+[[1;36mDEBUG[m]   Imported: javax.inject.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.artifact < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.classrealm < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.cli < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.configuration < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.exception < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.execution < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.execution.scope < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.lifecycle < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.model < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.monitor < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.plugin < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.profiles < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.project < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.reporting < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.repository < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.rtinfo < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.settings < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.toolchain < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.usability < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.events < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.observers < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.repository < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.resource < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.classworlds < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.component < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.configuration < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.container < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.context < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.logging < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.personality < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.artifact < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.collection < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.deployment < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.graph < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.impl < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.installation < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.metadata < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.repository < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.resolution < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.spi < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.transfer < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.version < plexus.core
+[[1;36mDEBUG[m]   Imported: org.fusesource.jansi.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.event.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.helpers.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.spi.* < plexus.core
+[[1;36mDEBUG[m] Populating class realm maven.api
+[[1;34mINFO[m] Error stacktraces are turned on.
+[[1;36mDEBUG[m] Message scheme: color
+[[1;36mDEBUG[m] Message styles: [1;36mdebug[m [1;34minfo[m [1;33mwarning[m [1;31merror[m [1;32msuccess[m [1;31mfailure[m [1mstrong[m [32mmojo[m [36mproject[m
+[[1;36mDEBUG[m] Reading global settings from /usr/share/maven/conf/settings.xml
+[[1;36mDEBUG[m] Reading user settings from /home/csq/.m2/settings.xml
+[[1;36mDEBUG[m] Reading global toolchains from /usr/share/maven/conf/toolchains.xml
+[[1;36mDEBUG[m] Reading user toolchains from /home/csq/.m2/toolchains.xml
+[[1;36mDEBUG[m] Using local repository at /home/csq/.m2/repository
+[[1;36mDEBUG[m] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /home/csq/.m2/repository
+[[1;34mINFO[m] Scanning for projects...
+[[1;36mDEBUG[m] Extension realms for project com.example:awesomeHugoBlog:jar:0.0.1-SNAPSHOT: (none)
+[[1;36mDEBUG[m] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[[1;36mDEBUG[m] Extension realms for project org.springframework.boot:spring-boot-starter-parent:pom:2.7.0: (none)
+[[1;36mDEBUG[m] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[[1;36mDEBUG[m] Extension realms for project org.springframework.boot:spring-boot-dependencies:pom:2.7.0: (none)
+[[1;36mDEBUG[m] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[[1;36mDEBUG[m] === REACTOR BUILD PLAN ================================================
+[[1;36mDEBUG[m] Project: com.example:awesomeHugoBlog:jar:0.0.1-SNAPSHOT
+[[1;36mDEBUG[m] Tasks:   [clean, compile]
+[[1;36mDEBUG[m] Style:   Regular
+[[1;36mDEBUG[m] =======================================================================
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36mcom.example:awesomeHugoBlog[0;1m >---------------------[m
+[[1;34mINFO[m] [1mBuilding awesomeHugoBlog 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;36mDEBUG[m] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[[1;36mDEBUG[m] Lifecycle clean -> [pre-clean, clean, post-clean]
+[[1;36mDEBUG[m] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[[1;36mDEBUG[m] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[[1;36mDEBUG[m] Lifecycle clean -> [pre-clean, clean, post-clean]
+[[1;36mDEBUG[m] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[[1;36mDEBUG[m] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[[1;36mDEBUG[m] Lifecycle clean -> [pre-clean, clean, post-clean]
+[[1;36mDEBUG[m] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[[1;36mDEBUG[m] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[[1;36mDEBUG[m] Lifecycle clean -> [pre-clean, clean, post-clean]
+[[1;36mDEBUG[m] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[[1;36mDEBUG[m] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[[1;36mDEBUG[m] Lifecycle clean -> [pre-clean, clean, post-clean]
+[[1;36mDEBUG[m] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[[1;36mDEBUG[m] === PROJECT BUILD PLAN ================================================
+[[1;36mDEBUG[m] Project:       com.example:awesomeHugoBlog:0.0.1-SNAPSHOT
+[[1;36mDEBUG[m] Dependencies (collect): []
+[[1;36mDEBUG[m] Dependencies (resolve): [compile]
+[[1;36mDEBUG[m] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[[1;36mDEBUG[m] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[[1;36mDEBUG[m] -----------------------------------------------------------------------
+[[1;36mDEBUG[m] Goal:          org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean (default-clean)
+[[1;36mDEBUG[m] Style:         Regular
+[[1;36mDEBUG[m] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${maven.clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <fast default-value="false">${maven.clean.fast}</fast>
+  <fastDir>${maven.clean.fastDir}</fastDir>
+  <fastMode default-value="background">${maven.clean.fastMode}</fastMode>
+  <followSymLinks default-value="false">${maven.clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.build.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${maven.clean.verbose}</verbose>
+</configuration>
+[[1;36mDEBUG[m] -----------------------------------------------------------------------
+[[1;36mDEBUG[m] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources (default-resources)
+[[1;36mDEBUG[m] Style:         Regular
+[[1;36mDEBUG[m] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <propertiesEncoding>UTF-8</propertiesEncoding>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.resources.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[[1;36mDEBUG[m] -----------------------------------------------------------------------
+[[1;36mDEBUG[m] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile (default-compile)
+[[1;36mDEBUG[m] Style:         Regular
+[[1;36mDEBUG[m] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <parameters default-value="false">true</parameters>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.7">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.7">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[[1;36mDEBUG[m] =======================================================================
+[[1;36mDEBUG[m] Dependency collection stats: {ConflictMarker.analyzeTime=822758, ConflictMarker.markTime=262004, ConflictMarker.nodeCount=219, ConflictIdSorter.graphTime=491530, ConflictIdSorter.topsortTime=247408, ConflictIdSorter.conflictIdCount=100, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9506855, ConflictResolver.conflictItemCount=197, DefaultDependencyCollector.collectTime=219312504, DefaultDependencyCollector.transformTime=12593528}
+[[1;36mDEBUG[m] com.example:awesomeHugoBlog:jar:0.0.1-SNAPSHOT
+[[1;36mDEBUG[m]    org.springframework.boot:spring-boot-starter-web:jar:2.7.0:compile
+[[1;36mDEBUG[m]       org.springframework.boot:spring-boot-starter:jar:2.7.0:compile (version managed from 2.7.0)
+[[1;36mDEBUG[m]          org.springframework.boot:spring-boot:jar:2.7.0:compile (version managed from 2.7.0)
+[[1;36mDEBUG[m]          org.springframework.boot:spring-boot-autoconfigure:jar:2.7.0:compile (version managed from 2.7.0)
+[[1;36mDEBUG[m]          org.springframework.boot:spring-boot-starter-logging:jar:2.7.0:compile (version managed from 2.7.0)
+[[1;36mDEBUG[m]             ch.qos.logback:logback-classic:jar:1.2.11:compile (version managed from 1.2.11)
+[[1;36mDEBUG[m]                ch.qos.logback:logback-core:jar:1.2.11:compile (version managed from 1.2.11)
+[[1;36mDEBUG[m]             org.apache.logging.log4j:log4j-to-slf4j:jar:2.17.2:compile (version managed from 2.17.2)
+[[1;36mDEBUG[m]                org.apache.logging.log4j:log4j-api:jar:2.17.2:compile (version managed from 2.17.2)
+[[1;36mDEBUG[m]             org.slf4j:jul-to-slf4j:jar:1.7.36:compile (version managed from 1.7.36)
+[[1;36mDEBUG[m]          jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile (version managed from 1.3.5)
+[[1;36mDEBUG[m]          org.yaml:snakeyaml:jar:1.30:compile (version managed from 1.30)
+[[1;36mDEBUG[m]       org.springframework.boot:spring-boot-starter-json:jar:2.7.0:compile (version managed from 2.7.0)
+[[1;36mDEBUG[m]          com.fasterxml.jackson.core:jackson-databind:jar:2.13.3:compile (version managed from 2.13.3)
+[[1;36mDEBUG[m]             com.fasterxml.jackson.core:jackson-annotations:jar:2.13.3:compile (version managed from 2.13.3)
+[[1;36mDEBUG[m]             com.fasterxml.jackson.core:jackson-core:jar:2.13.3:compile (version managed from 2.13.3)
+[[1;36mDEBUG[m]          com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.13.3:compile (version managed from 2.13.3)
+[[1;36mDEBUG[m]          com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.13.3:compile (version managed from 2.13.3)
+[[1;36mDEBUG[m]          com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.13.3:compile (version managed from 2.13.3)
+[[1;36mDEBUG[m]       org.springframework.boot:spring-boot-starter-tomcat:jar:2.7.0:compile (version managed from 2.7.0)
+[[1;36mDEBUG[m]          org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.63:compile (version managed from 9.0.63)
+[[1;36mDEBUG[m]          org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.63:compile (version managed from 9.0.63)
+[[1;36mDEBUG[m]       org.springframework:spring-web:jar:5.3.20:compile (version managed from 5.3.20)
+[[1;36mDEBUG[m]          org.springframework:spring-beans:jar:5.3.20:compile (version managed from 5.3.20)
+[[1;36mDEBUG[m]       org.springframework:spring-webmvc:jar:5.3.20:compile (version managed from 5.3.20)
+[[1;36mDEBUG[m]          org.springframework:spring-context:jar:5.3.20:compile (version managed from 5.3.20)
+[[1;36mDEBUG[m]          org.springframework:spring-expression:jar:5.3.20:compile (version managed from 5.3.20)
+[[1;36mDEBUG[m]    org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.7.0:compile
+[[1;36mDEBUG[m]       org.thymeleaf:thymeleaf-spring5:jar:3.0.15.RELEASE:compile (version managed from 3.0.15.RELEASE)
+[[1;36mDEBUG[m]          org.thymeleaf:thymeleaf:jar:3.0.15.RELEASE:compile (version managed from 3.0.15.RELEASE)
+[[1;36mDEBUG[m]             org.attoparser:attoparser:jar:2.0.5.RELEASE:compile
+[[1;36mDEBUG[m]             org.unbescape:unbescape:jar:1.1.6.RELEASE:compile
+[[1;36mDEBUG[m]          org.slf4j:slf4j-api:jar:1.7.36:compile (version managed from 1.7.25)
+[[1;36mDEBUG[m]       org.thymeleaf.extras:thymeleaf-extras-java8time:jar:3.0.4.RELEASE:compile (version managed from 3.0.4.RELEASE)
+[[1;36mDEBUG[m]    org.springframework.boot:spring-boot-starter-data-jpa:jar:2.7.0:compile
+[[1;36mDEBUG[m]       org.springframework.boot:spring-boot-starter-aop:jar:2.7.0:compile (version managed from 2.7.0)
+[[1;36mDEBUG[m]          org.aspectj:aspectjweaver:jar:1.9.7:compile (version managed from 1.9.7)
+[[1;36mDEBUG[m]       org.springframework.boot:spring-boot-starter-jdbc:jar:2.7.0:compile (version managed from 2.7.0)
+[[1;36mDEBUG[m]          com.zaxxer:HikariCP:jar:4.0.3:compile (version managed from 4.0.3)
+[[1;36mDEBUG[m]          org.springframework:spring-jdbc:jar:5.3.20:compile (version managed from 5.3.20)
+[[1;36mDEBUG[m]       jakarta.transaction:jakarta.transaction-api:jar:1.3.3:compile (version managed from 1.3.3)
+[[1;36mDEBUG[m]       jakarta.persistence:jakarta.persistence-api:jar:2.2.3:compile (version managed from 2.2.3)
+[[1;36mDEBUG[m]       org.hibernate:hibernate-core:jar:5.6.9.Final:compile (version managed from 5.6.9.Final)
+[[1;36mDEBUG[m]          org.jboss.logging:jboss-logging:jar:3.4.3.Final:compile (version managed from 3.4.3.Final)
+[[1;36mDEBUG[m]          net.bytebuddy:byte-buddy:jar:1.12.10:compile (version managed from 1.12.9)
+[[1;36mDEBUG[m]          antlr:antlr:jar:2.7.7:compile (version managed from 2.7.7)
+[[1;36mDEBUG[m]          org.jboss:jandex:jar:2.4.2.Final:compile
+[[1;36mDEBUG[m]          com.fasterxml:classmate:jar:1.5.1:compile (version managed from 1.5.1)
+[[1;36mDEBUG[m]          org.hibernate.common:hibernate-commons-annotations:jar:5.1.2.Final:compile
+[[1;36mDEBUG[m]          org.glassfish.jaxb:jaxb-runtime:jar:2.3.6:compile (version managed from 2.3.1)
+[[1;36mDEBUG[m]             org.glassfish.jaxb:txw2:jar:2.3.6:compile (version managed from 2.3.6)
+[[1;36mDEBUG[m]             com.sun.istack:istack-commons-runtime:jar:3.0.12:compile
+[[1;36mDEBUG[m]             com.sun.activation:jakarta.activation:jar:1.2.2:runtime (version managed from 1.2.2)
+[[1;36mDEBUG[m]       org.springframework.data:spring-data-jpa:jar:2.7.0:compile (version managed from 2.7.0)
+[[1;36mDEBUG[m]          org.springframework.data:spring-data-commons:jar:2.7.0:compile (version managed from 2.7.0)
+[[1;36mDEBUG[m]          org.springframework:spring-orm:jar:5.3.20:compile (version managed from 5.3.20)
+[[1;36mDEBUG[m]          org.springframework:spring-tx:jar:5.3.20:compile (version managed from 5.3.20)
+[[1;36mDEBUG[m]       org.springframework:spring-aspects:jar:5.3.20:compile (version managed from 5.3.20)
+[[1;36mDEBUG[m]    org.springframework.boot:spring-boot-starter-validation:jar:2.7.0:compile
+[[1;36mDEBUG[m]       org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.63:compile (version managed from 9.0.63)
+[[1;36mDEBUG[m]       org.hibernate.validator:hibernate-validator:jar:6.2.3.Final:compile (version managed from 6.2.3.Final)
+[[1;36mDEBUG[m]          jakarta.validation:jakarta.validation-api:jar:2.0.2:compile (version managed from 2.0.2)
+[[1;36mDEBUG[m]    mysql:mysql-connector-java:jar:8.0.29:runtime (exclusions managed from [com.google.protobuf:protobuf-java:*:*])
+[[1;36mDEBUG[m]    org.springframework.boot:spring-boot-starter-test:jar:2.7.0:test
+[[1;36mDEBUG[m]       org.springframework.boot:spring-boot-test:jar:2.7.0:test (version managed from 2.7.0)
+[[1;36mDEBUG[m]       org.springframework.boot:spring-boot-test-autoconfigure:jar:2.7.0:test (version managed from 2.7.0)
+[[1;36mDEBUG[m]       com.jayway.jsonpath:json-path:jar:2.7.0:test (version managed from 2.7.0)
+[[1;36mDEBUG[m]          net.minidev:json-smart:jar:2.4.8:test (version managed from 2.4.7)
+[[1;36mDEBUG[m]             net.minidev:accessors-smart:jar:2.4.8:test
+[[1;36mDEBUG[m]                org.ow2.asm:asm:jar:9.1:test
+[[1;36mDEBUG[m]       jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:compile (version managed from 2.3.3)
+[[1;36mDEBUG[m]          jakarta.activation:jakarta.activation-api:jar:1.2.2:compile (version managed from 1.2.2)
+[[1;36mDEBUG[m]       org.assertj:assertj-core:jar:3.22.0:test (version managed from 3.22.0)
+[[1;36mDEBUG[m]       org.hamcrest:hamcrest:jar:2.2:test (version managed from 2.2)
+[[1;36mDEBUG[m]       org.junit.jupiter:junit-jupiter:jar:5.8.2:test (version managed from 5.8.2)
+[[1;36mDEBUG[m]          org.junit.jupiter:junit-jupiter-api:jar:5.8.2:test (version managed from 5.8.2)
+[[1;36mDEBUG[m]             org.opentest4j:opentest4j:jar:1.2.0:test
+[[1;36mDEBUG[m]             org.junit.platform:junit-platform-commons:jar:1.8.2:test (version managed from 1.8.2)
+[[1;36mDEBUG[m]             org.apiguardian:apiguardian-api:jar:1.1.2:test
+[[1;36mDEBUG[m]          org.junit.jupiter:junit-jupiter-params:jar:5.8.2:test (version managed from 5.8.2)
+[[1;36mDEBUG[m]          org.junit.jupiter:junit-jupiter-engine:jar:5.8.2:test (version managed from 5.8.2)
+[[1;36mDEBUG[m]             org.junit.platform:junit-platform-engine:jar:1.8.2:test (version managed from 1.8.2)
+[[1;36mDEBUG[m]       org.mockito:mockito-core:jar:4.5.1:test (version managed from 4.5.1)
+[[1;36mDEBUG[m]          net.bytebuddy:byte-buddy-agent:jar:1.12.10:test (version managed from 1.12.9)
+[[1;36mDEBUG[m]          org.objenesis:objenesis:jar:3.2:test
+[[1;36mDEBUG[m]       org.mockito:mockito-junit-jupiter:jar:4.5.1:test (version managed from 4.5.1)
+[[1;36mDEBUG[m]       org.skyscreamer:jsonassert:jar:1.5.0:test (version managed from 1.5.0)
+[[1;36mDEBUG[m]          com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[[1;36mDEBUG[m]       org.springframework:spring-core:jar:5.3.20:compile (version managed from 5.3.20)
+[[1;36mDEBUG[m]          org.springframework:spring-jcl:jar:5.3.20:compile (version managed from 5.3.20)
+[[1;36mDEBUG[m]       org.springframework:spring-test:jar:5.3.20:test (version managed from 5.3.20)
+[[1;36mDEBUG[m]       org.xmlunit:xmlunit-core:jar:2.9.0:test (version managed from 2.9.0)
+[[1;36mDEBUG[m]    org.springframework.boot:spring-boot-starter-security:jar:2.7.0:compile
+[[1;36mDEBUG[m]       org.springframework:spring-aop:jar:5.3.20:compile (version managed from 5.3.20)
+[[1;36mDEBUG[m]       org.springframework.security:spring-security-config:jar:5.7.1:compile (version managed from 5.7.1)
+[[1;36mDEBUG[m]          org.springframework.security:spring-security-core:jar:5.7.1:compile (version managed from 5.7.1)
+[[1;36mDEBUG[m]             org.springframework.security:spring-security-crypto:jar:5.7.1:compile (version managed from 5.7.1)
+[[1;36mDEBUG[m]       org.springframework.security:spring-security-web:jar:5.7.1:compile (version managed from 5.7.1)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.2.0:clean[m [1m(default-clean)[m @ [36mawesomeHugoBlog[0;1m ---[m
+[[1;36mDEBUG[m] Dependency collection stats: {ConflictMarker.analyzeTime=67200, ConflictMarker.markTime=63156, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=40349, ConflictIdSorter.topsortTime=11473, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=93751, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=11954313, DefaultDependencyCollector.transformTime=434771}
+[[1;36mDEBUG[m] org.apache.maven.plugins:maven-clean-plugin:jar:3.2.0
+[[1;36mDEBUG[m]    org.apache.maven.shared:maven-shared-utils:jar:3.3.4:compile
+[[1;36mDEBUG[m]       commons-io:commons-io:jar:2.6:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-utils:jar:1.1:runtime
+[[1;36mDEBUG[m] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.2.0
+[[1;36mDEBUG[m] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.2.0
+[[1;36mDEBUG[m]   Imported:  < maven.api
+[[1;36mDEBUG[m] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.2.0
+[[1;36mDEBUG[m]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:3.2.0
+[[1;36mDEBUG[m]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.3.4
+[[1;36mDEBUG[m]   Included: commons-io:commons-io:jar:2.6
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-utils:jar:1.1
+[[1;36mDEBUG[m] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:3.2.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@55054057]
+[[1;36mDEBUG[m] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean' with basic configurator -->
+[[1;36mDEBUG[m]   (f) directory = /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target
+[[1;36mDEBUG[m]   (f) excludeDefaultDirectories = false
+[[1;36mDEBUG[m]   (f) failOnError = true
+[[1;36mDEBUG[m]   (f) fast = false
+[[1;36mDEBUG[m]   (f) fastMode = background
+[[1;36mDEBUG[m]   (f) followSymLinks = false
+[[1;36mDEBUG[m]   (f) outputDirectory = /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes
+[[1;36mDEBUG[m]   (f) reportDirectory = /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes
+[[1;36mDEBUG[m]   (f) retryOnError = true
+[[1;36mDEBUG[m]   (f) session = org.apache.maven.execution.MavenSession@2f5c1332
+[[1;36mDEBUG[m]   (f) skip = false
+[[1;36mDEBUG[m]   (f) testOutputDirectory = /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/test-classes
+[[1;36mDEBUG[m] -- end configuration --
+[[1;34mINFO[m] Deleting /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/generated-sources/annotations
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/generated-sources
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/maven-status/maven-compiler-plugin/compile/default-compile
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/maven-status/maven-compiler-plugin/compile
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/maven-status/maven-compiler-plugin
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/maven-status
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/application.properties
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog/config/LoginInterceptor.class
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog/config/WebConfig.class
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog/config
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog/service/CategoryService.class
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog/service/ArticleService.class
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog/service
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog/repository/CategoryRepository.class
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog/repository/ArticleRepository.class
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog/repository
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog/Application.class
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog/entity/Article.class
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog/entity/Category.class
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog/entity
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog/controller/ArticleController.class
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog/controller
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example/awesomehugoblog
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com/example
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/com
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/layout.html
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/timeline.html
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/login.html
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/index.html
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/register.html
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/articles/list.html
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/articles/detail.html
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/articles
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/admin/index.html
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/admin/articles/list.html
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/admin/articles/edit.html
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/admin/articles
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/admin/categories/list.html
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/admin/categories/edit.html
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/admin/categories
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/admin/tags.html
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/admin
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/links.html
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/tags.html
+[[1;34mINFO[m] Deleting file /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/about.html
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes
+[[1;34mINFO[m] Deleting directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target
+[[1;36mDEBUG[m] Skipping non-existing directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes
+[[1;36mDEBUG[m] Skipping non-existing directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/test-classes
+[[1;36mDEBUG[m] Skipping non-existing directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mawesomeHugoBlog[0;1m ---[m
+[[1;36mDEBUG[m] Dependency collection stats: {ConflictMarker.analyzeTime=129683, ConflictMarker.markTime=58615, ConflictMarker.nodeCount=86, ConflictIdSorter.graphTime=60347, ConflictIdSorter.topsortTime=22610, ConflictIdSorter.conflictIdCount=35, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=375537, ConflictResolver.conflictItemCount=85, DefaultDependencyCollector.collectTime=87350591, DefaultDependencyCollector.transformTime=681538}
+[[1;36mDEBUG[m] org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+[[1;36mDEBUG[m]    org.apache.maven:maven-plugin-api:jar:3.1.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-artifact:jar:3.1.0:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-core:jar:3.1.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-settings:jar:3.1.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-settings-builder:jar:3.1.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-repository-metadata:jar:3.1.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-model-builder:jar:3.1.0:compile
+[[1;36mDEBUG[m]       org.apache.maven:maven-aether-provider:jar:3.1.0:compile
+[[1;36mDEBUG[m]          org.eclipse.aether:aether-spi:jar:0.9.0.M2:compile
+[[1;36mDEBUG[m]       org.eclipse.aether:aether-impl:jar:0.9.0.M2:compile
+[[1;36mDEBUG[m]       org.eclipse.aether:aether-api:jar:0.9.0.M2:compile
+[[1;36mDEBUG[m]       org.eclipse.aether:aether-util:jar:0.9.0.M2:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-utils:jar:3.0.10:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-classworlds:jar:2.4.2:compile
+[[1;36mDEBUG[m]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[[1;36mDEBUG[m]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[[1;36mDEBUG[m]    org.apache.maven:maven-model:jar:3.1.0:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-component-annotations:jar:2.0.0:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-interpolation:jar:1.26:runtime
+[[1;36mDEBUG[m]    org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.0.0.M2a:compile
+[[1;36mDEBUG[m]       javax.enterprise:cdi-api:jar:1.0:compile
+[[1;36mDEBUG[m]          javax.annotation:jsr250-api:jar:1.0:compile
+[[1;36mDEBUG[m]          javax.inject:javax.inject:jar:1:compile
+[[1;36mDEBUG[m]       com.google.guava:guava:jar:10.0.1:compile
+[[1;36mDEBUG[m]          com.google.code.findbugs:jsr305:jar:1.3.9:compile
+[[1;36mDEBUG[m]       org.sonatype.sisu:sisu-guice:jar:no_aop:3.1.0:compile
+[[1;36mDEBUG[m]          aopalliance:aopalliance:jar:1.0:compile
+[[1;36mDEBUG[m]       org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.0.0.M2a:compile
+[[1;36mDEBUG[m]          asm:asm:jar:3.3.1:compile
+[[1;36mDEBUG[m]    org.apache.maven.shared:maven-filtering:jar:3.2.0:compile
+[[1;36mDEBUG[m]       org.apache.maven.shared:maven-shared-utils:jar:3.3.3:compile
+[[1;36mDEBUG[m]       org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[[1;36mDEBUG[m]    commons-io:commons-io:jar:2.6:compile
+[[1;36mDEBUG[m]    org.apache.commons:commons-lang3:jar:3.8.1:compile
+[[1;36mDEBUG[m] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.2.0
+[[1;36mDEBUG[m] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.2.0
+[[1;36mDEBUG[m]   Imported:  < maven.api
+[[1;36mDEBUG[m] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.2.0
+[[1;36mDEBUG[m]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+[[1;36mDEBUG[m]   Included: org.eclipse.aether:aether-util:jar:0.9.0.M2
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.10
+[[1;36mDEBUG[m]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[[1;36mDEBUG[m]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-component-annotations:jar:2.0.0
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.26
+[[1;36mDEBUG[m]   Included: javax.enterprise:cdi-api:jar:1.0
+[[1;36mDEBUG[m]   Included: com.google.guava:guava:jar:10.0.1
+[[1;36mDEBUG[m]   Included: com.google.code.findbugs:jsr305:jar:1.3.9
+[[1;36mDEBUG[m]   Included: org.sonatype.sisu:sisu-guice:jar:no_aop:3.1.0
+[[1;36mDEBUG[m]   Included: aopalliance:aopalliance:jar:1.0
+[[1;36mDEBUG[m]   Included: org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.0.0.M2a
+[[1;36mDEBUG[m]   Included: asm:asm:jar:3.3.1
+[[1;36mDEBUG[m]   Included: org.apache.maven.shared:maven-filtering:jar:3.2.0
+[[1;36mDEBUG[m]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.3.3
+[[1;36mDEBUG[m]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[[1;36mDEBUG[m]   Included: commons-io:commons-io:jar:2.6
+[[1;36mDEBUG[m]   Included: org.apache.commons:commons-lang3:jar:3.8.1
+[[1;36mDEBUG[m] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.2.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@55054057]
+[[1;36mDEBUG[m] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources' with basic configurator -->
+[[1;36mDEBUG[m]   (f) addDefaultExcludes = true
+[[1;36mDEBUG[m]   (f) buildFilters = []
+[[1;36mDEBUG[m]   (s) delimiters = [@]
+[[1;36mDEBUG[m]   (f) encoding = UTF-8
+[[1;36mDEBUG[m]   (f) escapeWindowsPaths = true
+[[1;36mDEBUG[m]   (f) fileNameFiltering = false
+[[1;36mDEBUG[m]   (s) includeEmptyDirs = false
+[[1;36mDEBUG[m]   (s) outputDirectory = /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes
+[[1;36mDEBUG[m]   (s) overwrite = false
+[[1;36mDEBUG[m]   (f) project = MavenProject: com.example:awesomeHugoBlog:0.0.1-SNAPSHOT @ /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/pom.xml
+[[1;36mDEBUG[m]   (f) propertiesEncoding = UTF-8
+[[1;36mDEBUG[m]   (s) resources = [Resource {targetPath: null, filtering: true, FileSet {directory: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources, PatternSet [includes: {**/application*.yml, **/application*.yaml, **/application*.properties}, excludes: {}]}}, Resource {targetPath: null, filtering: false, FileSet {directory: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources, PatternSet [includes: {}, excludes: {**/application*.yml, **/application*.yaml, **/application*.properties}]}}]
+[[1;36mDEBUG[m]   (f) session = org.apache.maven.execution.MavenSession@2f5c1332
+[[1;36mDEBUG[m]   (f) skip = false
+[[1;36mDEBUG[m]   (f) supportMultiLineFiltering = false
+[[1;36mDEBUG[m]   (f) useBuildFilters = true
+[[1;36mDEBUG[m]   (s) useDefaultDelimiters = false
+[[1;36mDEBUG[m] -- end configuration --
+[[1;36mDEBUG[m] properties used {spring-integration.version=5.5.12, flyway.version=8.5.11, java.specification.version=11, glassfish-jstl.version=1.2.6, java.vendor.url=https://ubuntu.com/, env.IFLOW_CLI=1, env.NAME=DESKTOP-K2BB28D, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher clean compile -X, jdk.debug=release, maven.version=3.6.3, javax-activation.version=1.2.0, kafka.version=3.1.1, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, env.NVM_BIN=/home/csq/.nvm/versions/node/v22.20.0/bin, byte-buddy.version=1.12.10, maven-install-plugin.version=2.5.2, java.runtime.version=11.0.28+6-post-Ubuntu-1ubuntu122.04.1, httpclient5.version=5.1.3, micrometer.version=1.9.0, rxjava-adapter.version=1.2.1, project.baseUri=file:/home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/, hibernate.version=5.6.9.Final, java.io.tmpdir=/tmp, java.version=11.0.28, javax-persistence.version=2.2, env.WT_SESSION=040ea9c7-a8b9-473c-b799-c356853178c4, env.WSL2_GUI_APPS_ENABLED=1, jakarta-ws-rs.version=2.1.6, build-helper-maven-plugin.version=3.3.0, mockito.version=4.5.1, java.vm.specification.name=Java Virtual Machine Specification, infinispan.version=13.0.10.Final, nekohtml.version=1.9.22, maven-assembly-plugin.version=3.3.0, env.WSL_DISTRO_NAME=Ubuntu-22.04, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, jakarta-servlet.version=4.0.4, java.vendor=Ubuntu, java.specification.maintenance.version=3, thymeleaf-extras-java8time.version=3.0.4.RELEASE, undertow.version=2.2.17.Final, mariadb.version=3.0.4, selenium-htmlunit.version=3.61.0, thymeleaf-extras-data-attribute.version=2.0.1, ehcache3.version=3.10.0, jakarta-xml-bind.version=2.3.3, commons-dbcp2.version=2.9.0, env.LANG=zh_CN.UTF-8, mongodb.version=4.6.0, env.XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop, user.timezone=, java.vm.specification.version=11, javax-transaction.version=1.3, maven.compiler.source=11, user.home=/home/csq, postgresql.version=42.3.5, reactive-streams.version=1.0.3, env.DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus, jmustache.version=1.15, querydsl.version=5.0.0, appengine-sdk.version=1.9.96, thymeleaf-layout-dialect.version=3.0.0, hamcrest.version=2.2, os.version=6.6.87.2-microsoft-standard-WSL2, commons-pool.version=1.6, jakarta-jms.version=2.0.3, jakarta-transaction.version=1.3.3, java.vm.name=OpenJDK 64-Bit Server VM, maven-help-plugin.version=3.2.0, mimepull.version=1.10.0, json-path.version=2.7.0, jaxen.version=1.2.0, johnzon.version=1.2.18, os.arch=amd64, spring-batch.version=4.3.6, couchbase-client.version=3.3.0, derby.version=10.14.2.0, javax-jsonb.version=1.0, rxjava2.version=2.2.21, javax-jaxws.version=2.3.1, awt.toolkit=sun.awt.X11.XToolkit, json-smart.version=2.4.8, javax-websocket.version=1.1, env.NVM_INC=/home/csq/.nvm/versions/node/v22.20.0/include/node, commons-codec.version=1.15, caffeine.version=2.9.3, h2.version=2.1.212, java.vm.compressedOopsMode=32-bit, cache2k.version=2.6.1.Final, pooled-jms.version=1.2.4, unboundid-ldapsdk.version=6.0.5, thymeleaf-extras-springsecurity.version=3.0.4.RELEASE, javax-jaxb.version=2.3.1, sqlite-jdbc.version=3.36.0.3, jakarta-servlet-jsp-jstl.version=1.2.7, activemq.version=5.16.5, httpasyncclient.version=4.1.5, jtds.version=1.3.1, javax-jms.version=2.0.1, jakarta-websocket.version=1.1.2, env.LOGNAME=csq, spring-security.version=5.7.1, hibernate-validator.version=6.2.3.Final, assertj.version=3.22.0, jakarta-xml-soap.version=1.4.2, influxdb-java.version=2.22, sun.os.patch.level=unknown, httpcore5.version=5.1.3, lombok.version=1.18.24, maven.compiler.target=11, jakarta-xml-ws.version=2.3.3, library.jansi.path=/usr/share/maven/lib/jansi-native, commons-pool2.version=2.11.1, jackson-bom.version=2.13.3, env.PAGER=cat, spring-retry.version=1.3.3, maven-invoker-plugin.version=3.2.2, maven-antrun-plugin.version=3.0.0, maven.conf=/usr/share/maven/conf, sun.java.launcher=SUN_STANDARD, user.country=US, env.NVM_DIR=/home/csq/.nvm, env.WAYLAND_DISPLAY=wayland-0, resource.delimiter=@, env.PYTHONIOENCODING=utf-8, javax-json.version=1.1.4, jboss-logging.version=3.4.3.Final, maven-resources-plugin.version=3.2.0, javax-validation.version=2.0.1.Final, netty.version=4.1.77.Final, jetty-jsp.version=2.2.0.v201112011158, maven-source-plugin.version=3.2.1, jetty.version=9.4.46.v20220331, rxjava.version=1.3.8, env.LC_ALL=zh_CN.UTF-8, elasticsearch.version=7.17.3, java.runtime.name=OpenJDK Runtime Environment, rest-assured.version=4.5.1, maven-deploy-plugin.version=2.8.2, env.NVM_CD_FLAGS=, env.MAVEN_CMD_LINE_ARGS= clean compile -X, log4j2.version=2.17.2, maven-failsafe-plugin.version=2.22.2, spring-framework.version=5.3.20, dropwizard-metrics.version=4.2.9, git-commit-id-plugin.version=4.9.10, kotlin-coroutines.version=1.6.1, hazelcast-hibernate5.version=2.2.1, htmlunit.version=2.60.0, env.TERM=xterm-256color, sun.cpu.isalist=, sun.arch.data.model=64, spring-restdocs.version=2.0.6.RELEASE, freemarker.version=2.3.31, thymeleaf.version=3.0.15.RELEASE, jakarta-json.version=1.1.6, janino.version=3.1.7, maven-jar-plugin.version=3.2.2, maven-compiler-plugin.version=3.10.1, java.specification.vendor=Oracle Corporation, rabbit-amqp-client.version=5.14.2, java.version.date=2025-07-15, spring-amqp.version=2.4.5, java.home=/usr/lib/jvm/java-11-openjdk-amd64, maven-war-plugin.version=3.3.2, jolokia.version=1.7.1, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, jetty-reactive-httpclient.version=1.1.11, env.PATH=/home/csq/.local/bin:/home/csq/.nvm/versions/node/v22.20.0/bin:/home/csq/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/windows/system32/HWAudioDriver/:/mnt/c/Program Files/Java/jdk1.8.0_202/bin:/mnt/c/Program Files (x86)/NetSarang/Xshell 8/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/node_global/node_modules/cnpm/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/d/workspace/apache-maven-3.8.8/bin:/mnt/c/Program Files/MySQL/MySQL Server 5.7/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/admin/.cargo/bin:/mnt/c/Users/admin/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/admin/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/admin/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/admin/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/admin/AppData/Local/Programs/Python/Python39:/mnt/c/Users/admin/AppData/Local/Programs/Ollama:/mnt/c/WINDOWS/System32/Wbem:/mnt/d/Qoder/bin:/mnt/c/Users/admin/AppData/Roaming/npm:/snap/bin, maven-dependency-plugin.version=3.3.0, httpclient.version=4.5.13, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:, jsonassert.version=1.5.0, file.encoding=ANSI_X3.4-1968, gson.version=2.9.0, sun-mail.version=1.6.7, jakarta-annotation.version=1.3.5, env._=/usr/bin/mvn, env.SHLVL=2, mssql-jdbc.version=10.2.1.jre8, snakeyaml.version=1.30, liquibase.version=4.9.1, prometheus-client.version=0.15.0, java.awt.printerjob=sun.print.PSPrinterJob, httpcore.version=4.4.15, lettuce.version=6.1.8.RELEASE, classworlds.conf=/usr/share/maven/bin/m2.conf, sun.io.unicode.encoding=UnicodeLittle, kotlin.version=1.6.21, wsdl4j.version=1.6.3, jakarta-management.version=1.1.4, env.HOSTTYPE=x86_64, tomcat.version=9.0.63, sendgrid.version=4.9.2, glassfish-jaxb.version=2.3.6, spring-ws.version=3.1.3, commons-lang3.version=3.12.0, os.name=Linux, junit.version=4.13.2, env.DISPLAY=:0, jetty-el.version=9.0.52, db2-jdbc.version=11.5.7.0, maven.build.timestamp=2025-10-17T03:08:44Z, reactor-bom.version=2020.0.19, maven-enforcer-plugin.version=3.0.0, jstl.version=1.2, spring-graphql.version=1.0.0, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, quartz.version=2.3.2, javax-money.version=1.1, graphql-java.version=18.1, spring-hateoas.version=1.5.0, path.separator=:, env.WSL_INTEROP=/run/WSL/470_interop, env.SHELL=/bin/bash, jakarta-validation.version=2.0.2, env.LESSCLOSE=/usr/bin/lesspipe %s %s, maven.multiModuleProjectDirectory=/home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog, env.PULSE_SERVER=unix:/mnt/wslg/PulseServer, oracle-database.version=21.5.0.0, env.MAVEN_PROJECTBASEDIR=/home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog, java.vm.info=mixed mode, sharing, cassandra-driver.version=4.14.1, env.USER=csq, java.class.version=55.0, xml-maven-plugin.version=1.0.2, sun.jnu.encoding=ANSI_X3.4-1968, xmlunit2.version=2.9.0, jakarta-mail.version=1.6.7, okhttp.version=4.9.3, slf4j.version=1.7.36, r2dbc-bom.version=Borca-SR1, solr.version=8.11.1, saaj-impl.version=1.5.3, maven.build.version=Apache Maven 3.6.3, hikaricp.version=4.0.3, maven.home=/usr/share/maven, maven-shade-plugin.version=3.3.0, jakarta-json-bind.version=1.0.2, file.separator=/, line.separator=
+, spring-kafka.version=2.8.6, jersey.version=2.35, user.name=csq, env.WSLENV=WT_SESSION:WT_PROFILE_ID:, hazelcast.version=5.1.1, jdom2.version=2.0.6.1, atomikos.version=4.0.6, aspectj.version=1.9.7, env.WT_PROFILE_ID={4ff56d04-d9cf-57ea-bae2-ad396374e7e3}, hsqldb.version=2.5.2, env.XDG_RUNTIME_DIR=/run/user/1000/, webjars-locator-core.version=0.50, project.reporting.outputEncoding=UTF-8, env.MOTD_SHOWN=update-motd, awaitility.version=4.2.0, env.OLDPWD=/home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog, env.PWD=/home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog, embedded-mongo.version=3.4.5, env.LESSOPEN=| /usr/bin/lesspipe %s, spring-ldap.version=2.4.0, java.class.path=/usr/share/maven/boot/plexus-classworlds-2.x.jar, dependency-management-plugin.version=1.0.11.RELEASE, env.HOME=/home/csq, java.vm.vendor=Ubuntu, rabbit-stream-client.version=0.5.0, maven-javadoc-plugin.version=3.4.0, servlet-api.version=4.0.1, rsocket.version=1.1.2, jakarta-persistence.version=2.2.3, artemis.version=2.19.1, groovy.version=3.0.10, javax-cache.version=1.1.1, logback.version=1.2.11, sun.cpu.endian=little, versions-maven-plugin.version=2.10.0, user.language=en, jedis.version=3.8.0, maven-clean-plugin.version=3.2.0, javax-mail.version=1.6.2, maven-surefire-plugin.version=2.22.2, javax-annotation.version=1.3.2, spring-data-bom.version=2021.2.0, mysql.version=8.0.29, classmate.version=1.5.1, jaybird.version=4.0.6.java8, antlr2.version=2.7.7, selenium.version=4.1.4, glassfish-el.version=3.0.4, project.build.sourceEncoding=UTF-8, jooq.version=3.14.15, java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-lts, user.dir=/home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog, ehcache.version=2.10.9.2, junit-jupiter.version=5.8.2, java.vm.version=11.0.28+6-post-Ubuntu-1ubuntu122.04.1, neo4j-java-driver.version=4.4.5, jakarta-activation.version=1.2.2, spring-session-bom.version=2021.2.0}
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;36mDEBUG[m] resource with targetPath null
+directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources
+excludes []
+includes [**/application*.yml, **/application*.yaml, **/application*.properties]
+[[1;36mDEBUG[m] ignoreDelta true
+[[1;34mINFO[m] Copying 1 resource
+[[1;36mDEBUG[m] Copying file application.properties
+[[1;36mDEBUG[m] file application.properties has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'application.properties'.
+[[1;36mDEBUG[m] filtering /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/application.properties to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/application.properties
+[[1;36mDEBUG[m] resource with targetPath null
+directory /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources
+excludes [**/application*.yml, **/application*.yaml, **/application*.properties]
+includes []
+[[1;36mDEBUG[m] ignoreDelta true
+[[1;34mINFO[m] Copying 16 resources
+[[1;36mDEBUG[m] Copying file templates/about.html
+[[1;36mDEBUG[m] file about.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'about.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/about.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/about.html
+[[1;36mDEBUG[m] Copying file templates/tags.html
+[[1;36mDEBUG[m] file tags.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'tags.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/tags.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/tags.html
+[[1;36mDEBUG[m] Copying file templates/links.html
+[[1;36mDEBUG[m] file links.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'links.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/links.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/links.html
+[[1;36mDEBUG[m] Copying file templates/admin/tags.html
+[[1;36mDEBUG[m] file tags.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'tags.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/admin/tags.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/admin/tags.html
+[[1;36mDEBUG[m] Copying file templates/admin/categories/edit.html
+[[1;36mDEBUG[m] file edit.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'edit.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/admin/categories/edit.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/admin/categories/edit.html
+[[1;36mDEBUG[m] Copying file templates/admin/categories/list.html
+[[1;36mDEBUG[m] file list.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'list.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/admin/categories/list.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/admin/categories/list.html
+[[1;36mDEBUG[m] Copying file templates/admin/articles/edit.html
+[[1;36mDEBUG[m] file edit.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'edit.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/admin/articles/edit.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/admin/articles/edit.html
+[[1;36mDEBUG[m] Copying file templates/admin/articles/list.html
+[[1;36mDEBUG[m] file list.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'list.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/admin/articles/list.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/admin/articles/list.html
+[[1;36mDEBUG[m] Copying file templates/admin/index.html
+[[1;36mDEBUG[m] file index.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'index.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/admin/index.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/admin/index.html
+[[1;36mDEBUG[m] Copying file templates/articles/detail.html
+[[1;36mDEBUG[m] file detail.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'detail.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/articles/detail.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/articles/detail.html
+[[1;36mDEBUG[m] Copying file templates/articles/list.html
+[[1;36mDEBUG[m] file list.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'list.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/articles/list.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/articles/list.html
+[[1;36mDEBUG[m] Copying file templates/register.html
+[[1;36mDEBUG[m] file register.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'register.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/register.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/register.html
+[[1;36mDEBUG[m] Copying file templates/index.html
+[[1;36mDEBUG[m] file index.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'index.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/index.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/index.html
+[[1;36mDEBUG[m] Copying file templates/login.html
+[[1;36mDEBUG[m] file login.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'login.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/login.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/login.html
+[[1;36mDEBUG[m] Copying file templates/timeline.html
+[[1;36mDEBUG[m] file timeline.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'timeline.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/timeline.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/timeline.html
+[[1;36mDEBUG[m] Copying file templates/layout.html
+[[1;36mDEBUG[m] file layout.html has a filtered file extension
+[[1;36mDEBUG[m] Using 'UTF-8' encoding to copy filtered resource 'layout.html'.
+[[1;36mDEBUG[m] copy /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/resources/templates/layout.html to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes/templates/layout.html
+[[1;36mDEBUG[m] no use filter components
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mawesomeHugoBlog[0;1m ---[m
+[[1;36mDEBUG[m] Dependency collection stats: {ConflictMarker.analyzeTime=40558, ConflictMarker.markTime=17057, ConflictMarker.nodeCount=17, ConflictIdSorter.graphTime=6673, ConflictIdSorter.topsortTime=13367, ConflictIdSorter.conflictIdCount=12, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=138375, ConflictResolver.conflictItemCount=17, DefaultDependencyCollector.collectTime=12541117, DefaultDependencyCollector.transformTime=232799}
+[[1;36mDEBUG[m] org.apache.maven.plugins:maven-compiler-plugin:jar:3.10.1
+[[1;36mDEBUG[m]    org.apache.maven.shared:maven-shared-utils:jar:3.3.4:compile
+[[1;36mDEBUG[m]       commons-io:commons-io:jar:2.6:compile
+[[1;36mDEBUG[m]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-component-annotations:jar:2.0.0:compile (version managed from default)
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-java:jar:1.1.1:compile
+[[1;36mDEBUG[m]       org.ow2.asm:asm:jar:9.2:compile
+[[1;36mDEBUG[m]       com.thoughtworks.qdox:qdox:jar:2.0.1:compile (version managed from default)
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-compiler-api:jar:2.11.1:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-utils:jar:3.4.1:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-compiler-manager:jar:2.11.1:compile
+[[1;36mDEBUG[m]    org.codehaus.plexus:plexus-compiler-javac:jar:2.11.1:runtime
+[[1;36mDEBUG[m] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.10.1
+[[1;36mDEBUG[m] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.10.1
+[[1;36mDEBUG[m]   Imported:  < maven.api
+[[1;36mDEBUG[m] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.10.1
+[[1;36mDEBUG[m]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.10.1
+[[1;36mDEBUG[m]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.3.4
+[[1;36mDEBUG[m]   Included: commons-io:commons-io:jar:2.6
+[[1;36mDEBUG[m]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-component-annotations:jar:2.0.0
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-java:jar:1.1.1
+[[1;36mDEBUG[m]   Included: org.ow2.asm:asm:jar:9.2
+[[1;36mDEBUG[m]   Included: com.thoughtworks.qdox:qdox:jar:2.0.1
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.11.1
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-utils:jar:3.4.1
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.11.1
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.11.1
+[[1;36mDEBUG[m] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.10.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@55054057]
+[[1;36mDEBUG[m] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile' with basic configurator -->
+[[1;36mDEBUG[m]   (f) basedir = /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog
+[[1;36mDEBUG[m]   (f) buildDirectory = /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target
+[[1;36mDEBUG[m]   (f) compilePath = [/home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes, /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.7.0/spring-boot-starter-web-2.7.0.jar, /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter/2.7.0/spring-boot-starter-2.7.0.jar, /home/csq/.m2/repository/org/springframework/boot/spring-boot/2.7.0/spring-boot-2.7.0.jar, /home/csq/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.7.0/spring-boot-autoconfigure-2.7.0.jar, /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.7.0/spring-boot-starter-logging-2.7.0.jar, /home/csq/.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar, /home/csq/.m2/repository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11.jar, /home/csq/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.17.2/log4j-to-slf4j-2.17.2.jar, /home/csq/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar, /home/csq/.m2/repository/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar, /home/csq/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar, /home/csq/.m2/repository/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar, /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.7.0/spring-boot-starter-json-2.7.0.jar, /home/csq/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar, /home/csq/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar, /home/csq/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar, /home/csq/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.3/jackson-datatype-jdk8-2.13.3.jar, /home/csq/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.3/jackson-datatype-jsr310-2.13.3.jar, /home/csq/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.3/jackson-module-parameter-names-2.13.3.jar, /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.7.0/spring-boot-starter-tomcat-2.7.0.jar, /home/csq/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.63/tomcat-embed-core-9.0.63.jar, /home/csq/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.63/tomcat-embed-websocket-9.0.63.jar, /home/csq/.m2/repository/org/springframework/spring-web/5.3.20/spring-web-5.3.20.jar, /home/csq/.m2/repository/org/springframework/spring-beans/5.3.20/spring-beans-5.3.20.jar, /home/csq/.m2/repository/org/springframework/spring-webmvc/5.3.20/spring-webmvc-5.3.20.jar, /home/csq/.m2/repository/org/springframework/spring-context/5.3.20/spring-context-5.3.20.jar, /home/csq/.m2/repository/org/springframework/spring-expression/5.3.20/spring-expression-5.3.20.jar, /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/2.7.0/spring-boot-starter-thymeleaf-2.7.0.jar, /home/csq/.m2/repository/org/thymeleaf/thymeleaf-spring5/3.0.15.RELEASE/thymeleaf-spring5-3.0.15.RELEASE.jar, /home/csq/.m2/repository/org/thymeleaf/thymeleaf/3.0.15.RELEASE/thymeleaf-3.0.15.RELEASE.jar, /home/csq/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar, /home/csq/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar, /home/csq/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar, /home/csq/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.jar, /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.7.0/spring-boot-starter-data-jpa-2.7.0.jar, /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.7.0/spring-boot-starter-aop-2.7.0.jar, /home/csq/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar, /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.7.0/spring-boot-starter-jdbc-2.7.0.jar, /home/csq/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar, /home/csq/.m2/repository/org/springframework/spring-jdbc/5.3.20/spring-jdbc-5.3.20.jar, /home/csq/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar, /home/csq/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar, /home/csq/.m2/repository/org/hibernate/hibernate-core/5.6.9.Final/hibernate-core-5.6.9.Final.jar, /home/csq/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar, /home/csq/.m2/repository/net/bytebuddy/byte-buddy/1.12.10/byte-buddy-1.12.10.jar, /home/csq/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar, /home/csq/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar, /home/csq/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar, /home/csq/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar, /home/csq/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.6/jaxb-runtime-2.3.6.jar, /home/csq/.m2/repository/org/glassfish/jaxb/txw2/2.3.6/txw2-2.3.6.jar, /home/csq/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar, /home/csq/.m2/repository/org/springframework/data/spring-data-jpa/2.7.0/spring-data-jpa-2.7.0.jar, /home/csq/.m2/repository/org/springframework/data/spring-data-commons/2.7.0/spring-data-commons-2.7.0.jar, /home/csq/.m2/repository/org/springframework/spring-orm/5.3.20/spring-orm-5.3.20.jar, /home/csq/.m2/repository/org/springframework/spring-tx/5.3.20/spring-tx-5.3.20.jar, /home/csq/.m2/repository/org/springframework/spring-aspects/5.3.20/spring-aspects-5.3.20.jar, /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.7.0/spring-boot-starter-validation-2.7.0.jar, /home/csq/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.63/tomcat-embed-el-9.0.63.jar, /home/csq/.m2/repository/org/hibernate/validator/hibernate-validator/6.2.3.Final/hibernate-validator-6.2.3.Final.jar, /home/csq/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar, /home/csq/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar, /home/csq/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar, /home/csq/.m2/repository/org/springframework/spring-core/5.3.20/spring-core-5.3.20.jar, /home/csq/.m2/repository/org/springframework/spring-jcl/5.3.20/spring-jcl-5.3.20.jar, /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-security/2.7.0/spring-boot-starter-security-2.7.0.jar, /home/csq/.m2/repository/org/springframework/spring-aop/5.3.20/spring-aop-5.3.20.jar, /home/csq/.m2/repository/org/springframework/security/spring-security-config/5.7.1/spring-security-config-5.7.1.jar, /home/csq/.m2/repository/org/springframework/security/spring-security-core/5.7.1/spring-security-core-5.7.1.jar, /home/csq/.m2/repository/org/springframework/security/spring-security-crypto/5.7.1/spring-security-crypto-5.7.1.jar, /home/csq/.m2/repository/org/springframework/security/spring-security-web/5.7.1/spring-security-web-5.7.1.jar]
+[[1;36mDEBUG[m]   (f) compileSourceRoots = [/home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java]
+[[1;36mDEBUG[m]   (f) compilerId = javac
+[[1;36mDEBUG[m]   (f) createMissingPackageInfoClass = true
+[[1;36mDEBUG[m]   (f) debug = true
+[[1;36mDEBUG[m]   (f) debugFileName = javac
+[[1;36mDEBUG[m]   (f) enablePreview = false
+[[1;36mDEBUG[m]   (f) encoding = UTF-8
+[[1;36mDEBUG[m]   (f) failOnError = true
+[[1;36mDEBUG[m]   (f) failOnWarning = false
+[[1;36mDEBUG[m]   (f) forceJavacCompilerUse = false
+[[1;36mDEBUG[m]   (f) fork = false
+[[1;36mDEBUG[m]   (f) generatedSourcesDirectory = /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/generated-sources/annotations
+[[1;36mDEBUG[m]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile {execution: default-compile}
+[[1;36mDEBUG[m]   (f) optimize = false
+[[1;36mDEBUG[m]   (f) outputDirectory = /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes
+[[1;36mDEBUG[m]   (f) parameters = true
+[[1;36mDEBUG[m]   (f) project = MavenProject: com.example:awesomeHugoBlog:0.0.1-SNAPSHOT @ /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/pom.xml
+[[1;36mDEBUG[m]   (f) projectArtifact = com.example:awesomeHugoBlog:jar:0.0.1-SNAPSHOT
+[[1;36mDEBUG[m]   (f) session = org.apache.maven.execution.MavenSession@2f5c1332
+[[1;36mDEBUG[m]   (f) showDeprecation = false
+[[1;36mDEBUG[m]   (f) showWarnings = false
+[[1;36mDEBUG[m]   (f) skipMultiThreadWarning = false
+[[1;36mDEBUG[m]   (f) source = 11
+[[1;36mDEBUG[m]   (f) staleMillis = 0
+[[1;36mDEBUG[m]   (s) target = 11
+[[1;36mDEBUG[m]   (f) useIncrementalCompilation = true
+[[1;36mDEBUG[m]   (f) verbose = false
+[[1;36mDEBUG[m] -- end configuration --
+[[1;36mDEBUG[m] Using compiler 'javac'.
+[[1;36mDEBUG[m] Adding /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/generated-sources/annotations to compile source roots:
+  /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java
+[[1;36mDEBUG[m] New compile source roots:
+  /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java
+  /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/generated-sources/annotations
+[[1;36mDEBUG[m] CompilerReuseStrategy: reuseCreated
+[[1;36mDEBUG[m] useIncrementalCompilation enabled
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/config/WebConfig.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/entity/Category.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/service/CategoryService.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/Application.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/controller/ArticleController.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/controller/LoginController.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/config/SecurityConfig.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/controller/AdminController.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/service/UserService.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/service/CustomUserDetailsService.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/entity/Article.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/repository/UserRepository.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/entity/User.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/controller/CategoryController.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/service/ArticleService.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/repository/CategoryRepository.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/config/LoginInterceptor.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/repository/ArticleRepository.java
+[[1;36mDEBUG[m] Stale source detected: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/controller/MainController.java
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;36mDEBUG[m] Classpath:
+[[1;36mDEBUG[m]  /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.7.0/spring-boot-starter-web-2.7.0.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter/2.7.0/spring-boot-starter-2.7.0.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/boot/spring-boot/2.7.0/spring-boot-2.7.0.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.7.0/spring-boot-autoconfigure-2.7.0.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.7.0/spring-boot-starter-logging-2.7.0.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.17.2/log4j-to-slf4j-2.17.2.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.7.0/spring-boot-starter-json-2.7.0.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.3/jackson-datatype-jdk8-2.13.3.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.3/jackson-datatype-jsr310-2.13.3.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.3/jackson-module-parameter-names-2.13.3.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.7.0/spring-boot-starter-tomcat-2.7.0.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.63/tomcat-embed-core-9.0.63.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.63/tomcat-embed-websocket-9.0.63.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/spring-web/5.3.20/spring-web-5.3.20.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/spring-beans/5.3.20/spring-beans-5.3.20.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/spring-webmvc/5.3.20/spring-webmvc-5.3.20.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/spring-context/5.3.20/spring-context-5.3.20.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/spring-expression/5.3.20/spring-expression-5.3.20.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/2.7.0/spring-boot-starter-thymeleaf-2.7.0.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/thymeleaf/thymeleaf-spring5/3.0.15.RELEASE/thymeleaf-spring5-3.0.15.RELEASE.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/thymeleaf/thymeleaf/3.0.15.RELEASE/thymeleaf-3.0.15.RELEASE.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.7.0/spring-boot-starter-data-jpa-2.7.0.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.7.0/spring-boot-starter-aop-2.7.0.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.7.0/spring-boot-starter-jdbc-2.7.0.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/spring-jdbc/5.3.20/spring-jdbc-5.3.20.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/hibernate/hibernate-core/5.6.9.Final/hibernate-core-5.6.9.Final.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/net/bytebuddy/byte-buddy/1.12.10/byte-buddy-1.12.10.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.6/jaxb-runtime-2.3.6.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/glassfish/jaxb/txw2/2.3.6/txw2-2.3.6.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/data/spring-data-jpa/2.7.0/spring-data-jpa-2.7.0.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/data/spring-data-commons/2.7.0/spring-data-commons-2.7.0.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/spring-orm/5.3.20/spring-orm-5.3.20.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/spring-tx/5.3.20/spring-tx-5.3.20.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/spring-aspects/5.3.20/spring-aspects-5.3.20.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.7.0/spring-boot-starter-validation-2.7.0.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.63/tomcat-embed-el-9.0.63.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/hibernate/validator/hibernate-validator/6.2.3.Final/hibernate-validator-6.2.3.Final.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/spring-core/5.3.20/spring-core-5.3.20.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/spring-jcl/5.3.20/spring-jcl-5.3.20.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-security/2.7.0/spring-boot-starter-security-2.7.0.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/spring-aop/5.3.20/spring-aop-5.3.20.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/security/spring-security-config/5.7.1/spring-security-config-5.7.1.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/security/spring-security-core/5.7.1/spring-security-core-5.7.1.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/security/spring-security-crypto/5.7.1/spring-security-crypto-5.7.1.jar
+[[1;36mDEBUG[m]  /home/csq/.m2/repository/org/springframework/security/spring-security-web/5.7.1/spring-security-web-5.7.1.jar
+[[1;36mDEBUG[m] Source roots:
+[[1;36mDEBUG[m]  /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java
+[[1;36mDEBUG[m]  /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/generated-sources/annotations
+[[1;36mDEBUG[m] Command line options:
+[[1;36mDEBUG[m] -d /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes -classpath /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes:/home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.7.0/spring-boot-starter-web-2.7.0.jar:/home/csq/.m2/repository/org/springframework/boot/spring-boot-starter/2.7.0/spring-boot-starter-2.7.0.jar:/home/csq/.m2/repository/org/springframework/boot/spring-boot/2.7.0/spring-boot-2.7.0.jar:/home/csq/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.7.0/spring-boot-autoconfigure-2.7.0.jar:/home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.7.0/spring-boot-starter-logging-2.7.0.jar:/home/csq/.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar:/home/csq/.m2/repository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11.jar:/home/csq/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.17.2/log4j-to-slf4j-2.17.2.jar:/home/csq/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar:/home/csq/.m2/repository/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar:/home/csq/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/csq/.m2/repository/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar:/home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.7.0/spring-boot-starter-json-2.7.0.jar:/home/csq/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/home/csq/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/home/csq/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/home/csq/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.3/jackson-datatype-jdk8-2.13.3.jar:/home/csq/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.3/jackson-datatype-jsr310-2.13.3.jar:/home/csq/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.3/jackson-module-parameter-names-2.13.3.jar:/home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.7.0/spring-boot-starter-tomcat-2.7.0.jar:/home/csq/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.63/tomcat-embed-core-9.0.63.jar:/home/csq/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.63/tomcat-embed-websocket-9.0.63.jar:/home/csq/.m2/repository/org/springframework/spring-web/5.3.20/spring-web-5.3.20.jar:/home/csq/.m2/repository/org/springframework/spring-beans/5.3.20/spring-beans-5.3.20.jar:/home/csq/.m2/repository/org/springframework/spring-webmvc/5.3.20/spring-webmvc-5.3.20.jar:/home/csq/.m2/repository/org/springframework/spring-context/5.3.20/spring-context-5.3.20.jar:/home/csq/.m2/repository/org/springframework/spring-expression/5.3.20/spring-expression-5.3.20.jar:/home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/2.7.0/spring-boot-starter-thymeleaf-2.7.0.jar:/home/csq/.m2/repository/org/thymeleaf/thymeleaf-spring5/3.0.15.RELEASE/thymeleaf-spring5-3.0.15.RELEASE.jar:/home/csq/.m2/repository/org/thymeleaf/thymeleaf/3.0.15.RELEASE/thymeleaf-3.0.15.RELEASE.jar:/home/csq/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/home/csq/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/home/csq/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/csq/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.jar:/home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.7.0/spring-boot-starter-data-jpa-2.7.0.jar:/home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.7.0/spring-boot-starter-aop-2.7.0.jar:/home/csq/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar:/home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.7.0/spring-boot-starter-jdbc-2.7.0.jar:/home/csq/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar:/home/csq/.m2/repository/org/springframework/spring-jdbc/5.3.20/spring-jdbc-5.3.20.jar:/home/csq/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/home/csq/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/home/csq/.m2/repository/org/hibernate/hibernate-core/5.6.9.Final/hibernate-core-5.6.9.Final.jar:/home/csq/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar:/home/csq/.m2/repository/net/bytebuddy/byte-buddy/1.12.10/byte-buddy-1.12.10.jar:/home/csq/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/csq/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar:/home/csq/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/csq/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/csq/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.6/jaxb-runtime-2.3.6.jar:/home/csq/.m2/repository/org/glassfish/jaxb/txw2/2.3.6/txw2-2.3.6.jar:/home/csq/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar:/home/csq/.m2/repository/org/springframework/data/spring-data-jpa/2.7.0/spring-data-jpa-2.7.0.jar:/home/csq/.m2/repository/org/springframework/data/spring-data-commons/2.7.0/spring-data-commons-2.7.0.jar:/home/csq/.m2/repository/org/springframework/spring-orm/5.3.20/spring-orm-5.3.20.jar:/home/csq/.m2/repository/org/springframework/spring-tx/5.3.20/spring-tx-5.3.20.jar:/home/csq/.m2/repository/org/springframework/spring-aspects/5.3.20/spring-aspects-5.3.20.jar:/home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.7.0/spring-boot-starter-validation-2.7.0.jar:/home/csq/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.63/tomcat-embed-el-9.0.63.jar:/home/csq/.m2/repository/org/hibernate/validator/hibernate-validator/6.2.3.Final/hibernate-validator-6.2.3.Final.jar:/home/csq/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/csq/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/csq/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/csq/.m2/repository/org/springframework/spring-core/5.3.20/spring-core-5.3.20.jar:/home/csq/.m2/repository/org/springframework/spring-jcl/5.3.20/spring-jcl-5.3.20.jar:/home/csq/.m2/repository/org/springframework/boot/spring-boot-starter-security/2.7.0/spring-boot-starter-security-2.7.0.jar:/home/csq/.m2/repository/org/springframework/spring-aop/5.3.20/spring-aop-5.3.20.jar:/home/csq/.m2/repository/org/springframework/security/spring-security-config/5.7.1/spring-security-config-5.7.1.jar:/home/csq/.m2/repository/org/springframework/security/spring-security-core/5.7.1/spring-security-core-5.7.1.jar:/home/csq/.m2/repository/org/springframework/security/spring-security-crypto/5.7.1/spring-security-crypto-5.7.1.jar:/home/csq/.m2/repository/org/springframework/security/spring-security-web/5.7.1/spring-security-web-5.7.1.jar: -sourcepath /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java:/home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/generated-sources/annotations: -s /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/generated-sources/annotations -g -parameters -nowarn -target 11 -source 11 -encoding UTF-8
+[[1;36mDEBUG[m] incrementalBuildHelper#beforeRebuildExecution
+[[1;34mINFO[m] Compiling 19 source files to /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/target/classes
+[[1;36mDEBUG[m] incrementalBuildHelper#afterRebuildExecution
+[[1;34mINFO[m] /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/config/SecurityConfig.java: /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/config/SecurityConfig.java uses or overrides a deprecated API.
+[[1;34mINFO[m] /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/config/SecurityConfig.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/controller/LoginController.java:[30,24] cannot find symbol
+  symbol:   method authenticate(java.lang.String,java.lang.String)
+  location: variable userService of type com.example.awesomehugoblog.service.UserService
+[[1;31mERROR[m] /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/controller/LoginController.java:[60,49] cannot find symbol
+  symbol:   method isPresent()
+  location: class com.example.awesomehugoblog.entity.User
+[[1;31mERROR[m] /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/config/SecurityConfig.java:[40,32] incompatible types: cannot infer type-variable(s) T
+    (argument mismatch; bad return type in method reference
+      com.example.awesomehugoblog.entity.User cannot be converted to org.springframework.security.core.userdetails.UserDetails)
+[[1;34mINFO[m] 3 errors 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  1.730 s
+[[1;34mINFO[m] Finished at: 2025-10-17T11:08:45+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m on project [36mawesomeHugoBlog[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/controller/LoginController.java:[30,24] cannot find symbol
+[[1;31mERROR[m]   symbol:   method authenticate(java.lang.String,java.lang.String)
+[[1;31mERROR[m]   location: variable userService of type com.example.awesomehugoblog.service.UserService
+[[1;31mERROR[m] /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/controller/LoginController.java:[60,49] cannot find symbol
+[[1;31mERROR[m]   symbol:   method isPresent()
+[[1;31mERROR[m]   location: class com.example.awesomehugoblog.entity.User
+[[1;31mERROR[m] /home/csq/workspace/awesome/niopd-workspace/initiatives/awesomeHugoBlog/src/main/java/com/example/awesomehugoblog/config/SecurityConfig.java:[40,32] incompatible types: cannot infer type-variable(s) T
+[[1;31mERROR[m]     (argument mismatch; bad return type in method reference
+[[1;31mERROR[m]       com.example.awesomehugoblog.entity.User cannot be converted to org.springframework.security.core.userdetails.UserDetails)
+[[1;31mERROR[m] -> [1m[Help 1][m
+[1;31morg.apache.maven.lifecycle.LifecycleExecutionException[m: [1;31mFailed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m on project [36mawesomeHugoBlog[m: [1;31mCompilation failure[m[m
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:215[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:156[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:148[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:305[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:957[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:289[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:193[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:566[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:282[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:225[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:406[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:347[m)
+[1mCaused by[m: org.apache.maven.plugin.compiler.CompilationFailureException: [1;31mCompilation failure[m
+    [1mat[m org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute ([1mAbstractCompilerMojo.java:1310[m)
+    [1mat[m org.apache.maven.plugin.compiler.CompilerMojo.execute ([1mCompilerMojo.java:198[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:137[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:210[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:156[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:148[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:305[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:957[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:289[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:193[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m jdk.internal.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:566[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:282[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:225[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:406[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:347[m)
+[[1;31mERROR[m] 
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

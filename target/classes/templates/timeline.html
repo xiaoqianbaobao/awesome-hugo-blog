@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>时间轴 - Qian's Blog</title>
+    <link href="/css/blog-style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <header class="blog-header">
+        <div class="header-content">
+            <h1 class="blog-title">Qian's Blog</h1>
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="搜索...">
+            </div>
+        </div>
+    </header>
+
+    <nav class="blog-navbar">
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="/" class="nav-link">🏠主页</a></li>
+                <li><a href="/articles" class="nav-link">📚文章</a></li>
+                <li><a href="/timeline" class="nav-link active">⏱时间轴</a></li>
+                <li><a href="/tags" class="nav-link">🔖标签</a></li>
+                <li><a href="/about" class="nav-link">🙋🏻♂️关于</a></li>
+                <li><a href="/links" class="nav-link">🤝友链</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="blog-content">
+        <div class="blog-container fade-in">
+            <h1>⏱ 时间轴</h1>
+            <p>记录博客的点点滴滴</p>
+            
+            <div class="timeline-section">
+                <div class="year-header">
+                    <h2>2025年</h2>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2025-10-17</div>
+                    <div class="blog-card">
+                        <h4 class="blog-card-title">测试1</h4>
+                        <div class="blog-card-meta">
+                            <i class="bi bi-folder me-1"></i> 未分类
+                            <span class="mx-2">|</span>
+                            <i class="bi bi-tags me-1"></i>
+                            <span class="blog-tag">测试1</span>
+                        </div>
+                        <p class="blog-card-text">测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测试1测...</p>
+                        <a href="/article/3" class="blog-btn">阅读更多</a>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2025-10-16</div>
+                    <div class="blog-card">
+                        <h4 class="blog-card-title">测试</h4>
+                        <div class="blog-card-meta">
+                            <i class="bi bi-folder me-1"></i> 未分类
+                            <span class="mx-2">|</span>
+                            <i class="bi bi-tags me-1"></i>
+                            <span class="blog-tag">测试</span>
+                        </div>
+                        <p class="blog-card-text">测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测...</p>
+                        <a href="/article/2" class="blog-btn">阅读更多</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-section">
+                <div class="year-header">
+                    <h2>2023年</h2>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2023-06-15</div>
+                    <div class="blog-card">
+                        <h4 class="blog-card-title">Spring Boot实战教程</h4>
+                        <div class="blog-card-meta">
+                            <i class="bi bi-folder me-1"></i> 技术教程
+                            <span class="mx-2">|</span>
+                            <i class="bi bi-tags me-1"></i>
+                            <span class="blog-tag">Java</span>
+                            <span class="blog-tag">Spring Boot</span>
+                        </div>
+                        <p class="blog-card-text">Spring Boot是一个基于Spring框架的快速开发框架，它简化了Spring应用的初始搭建以及开发过程。本文将详细介绍Spring Boot的核心特性和最佳实践...</p>
+                        <a href="#" class="blog-btn">阅读更多</a>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2023-05-20</div>
+                    <div class="blog-card">
+                        <h4 class="blog-card-title">Java并发编程详解</h4>
+                        <div class="blog-card-meta">
+                            <i class="bi bi-folder me-1"></i> 技术教程
+                            <span class="mx-2">|</span>
+                            <i class="bi bi-tags me-1"></i>
+                            <span class="blog-tag">Java</span>
+                            <span class="blog-tag">并发编程</span>
+                        </div>
+                        <p class="blog-card-text">Java并发编程是Java开发中的重要知识点，掌握并发编程能够有效提高程序的执行效率。本文将深入讲解Java并发编程的核心概念和实现方式...</p>
+                        <a href="#" class="blog-btn">阅读更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <!-- 热门标签 -->
+            <div class="blog-container">
+                <h3>🔥 热门标签</h3>
+                <div>
+                    <span class="blog-tag">Java</span>
+                    <span class="blog-tag">Spring Boot</span>
+                    <span class="blog-tag">Web开发</span>
+                    <span class="blog-tag">数据库</span>
+                    <span class="blog-tag">前端</span>
+                </div>
+            </div>
+            
+            <!-- 归档 -->
+            <div class="blog-container">
+                <h3>📦 归档</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li class="blog-card">
+                        <a href="#" class="blog-link">2025年 (2)</a>
+                    </li>
+                    <li class="blog-card">
+                        <a href="#" class="blog-link">2024年 (15)</a>
+                    </li>
+                    <li class="blog-card">
+                        <a href="#" class="blog-link">2023年 (28)</a>
+                    </li>
+                    <li class="blog-card">
+                        <a href="#" class="blog-link">2022年 (12)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="blog-footer">
+        <div class="blog-content">
+            <p>&copy; 2025 Qian's Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 添加页面加载动画
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.blog-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'all 0.5s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+        });
+    </script>
+</body>
+</html>

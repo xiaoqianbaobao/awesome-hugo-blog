@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>注册 - Qian's Blog</title>
+    <link href="/css/geek-style.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0f0f0f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .register-card {
+            background-color: #1a1a1a;
+            border: 1px solid #00ff00;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+        .register-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .register-header h3 {
+            color: #00ff00;
+            margin-bottom: 10px;
+        }
+        .register-header p {
+            color: #00aaaa;
+            margin-bottom: 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-label {
+            color: #00ff00;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+            background-color: #2a2a2a;
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .input-group i {
+            color: #00ff00;
+            padding: 0 10px;
+        }
+        .form-control {
+            background-color: transparent;
+            border: none;
+            color: #00ff00;
+            flex: 1;
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+        }
+        .form-control:focus {
+            outline: none;
+        }
+        .btn-register {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .alert {
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .alert-danger {
+            background-color: #2a2a2a;
+            border: 1px solid #ff5555;
+            color: #ff5555;
+        }
+        .alert-success {
+            background-color: #2a2a2a;
+            border: 1px solid #55ff55;
+            color: #55ff55;
+        }
+        .form-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #00aaaa;
+        }
+        .form-link a {
+            color: #00ffff;
+            text-decoration: none;
+        }
+        .form-link a:hover {
+            color: #ffff00;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-card">
+        <div class="register-header">
+            <h3>管理员注册</h3>
+            <p>Qian's Blog</p>
+        </div>
+        <form th:action="@{/register}" method="post">
+            <div th:if="${error}" class="alert alert-danger" role="alert">
+                <i class="bi bi-exclamation-triangle me-2"></i>
+                <span th:text="${error}">错误信息</span>
+            </div>
+            
+            <div th:if="${success}" class="alert alert-success" role="alert">
+                <i class="bi bi-check-circle me-2"></i>
+                <span th:text="${success}">成功信息</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="username" class="form-label">用户名</label>
+                <div class="input-group">
+                    <i class="bi bi-person"></i>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="请输入用户名" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="password" class="form-label">密码</label>
+                <div class="input-group">
+                    <i class="bi bi-lock"></i>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirmPassword" class="form-label">确认密码</label>
+                <div class="input-group">
+                    <i class="bi bi-lock-fill"></i>
+                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="请再次输入密码" required>
+                </div>
+            </div>
+            
+            <button type="submit" class="geek-btn btn-register">注册</button>
+        </form>
+        
+        <div class="form-link">
+            <p>已有账号？<a href="/login">立即登录</a></p>
+        </div>
+    </div>
+
+    <script>
+        // 添加表单验证
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            const password = document.getElementById('password');
+            const confirmPassword = document.getElementById('confirmPassword');
+            
+            form.addEventListener('submit', function(e) {
+                if (password.value !== confirmPassword.value) {
+                    e.preventDefault();
+                    alert('两次输入的密码不一致');
+                    confirmPassword.focus();
+                    return false;
+                }
+                
+                if (password.value.length < 6) {
+                    e.preventDefault();
+                    alert('密码长度不能少于6位');
+                    password.focus();
+                    return false;
+                }
+            });
+            
+            // 为输入框添加焦点效果
+            const inputs = document.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.parentElement.style.boxShadow = '0 0 10px #00ff00';
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.parentElement.parentElement.style.boxShadow = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

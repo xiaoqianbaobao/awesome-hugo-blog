@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>标签管理 - Qian's Blog</title>
+    <link href="/css/blog-style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .admin-layout {
+            display: flex;
+            min-height: 100vh;
+        }
+        
+        .admin-sidebar {
+            width: 250px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .sidebar-header {
+            padding: 0 20px 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .sidebar-header h3 {
+            color: white;
+            margin: 0;
+        }
+        
+        .sidebar-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .sidebar-menu li {
+            margin-bottom: 5px;
+        }
+        
+        .sidebar-menu a {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 0 25px 25px 0;
+            margin-right: 10px;
+        }
+        
+        .sidebar-menu a:hover {
+            background: rgba(255,255,255,0.1);
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        .sidebar-menu a.active {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .sidebar-menu i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .main-content {
+            flex: 1;
+            background-color: #f5f5f5;
+        }
+        
+        .admin-header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .admin-header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        
+        .admin-content {
+            padding: 30px;
+        }
+        
+        .tags-table {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        
+        .table-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+        }
+        
+        .table-responsive {
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th {
+            background-color: #f8f9fa;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #555;
+            border-bottom: 2px solid #eee;
+        }
+        
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        tr:hover td {
+            background-color: #f8f9fa;
+        }
+        
+        .btn-group {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .btn-sm {
+            padding: 5px 10px;
+            font-size: 0.85rem;
+            border-radius: 5px;
+        }
+        
+        .tag-cloud-section {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 10px;
+            width: 500px;
+            max-width: 90%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .modal-header {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-body {
+            padding: 20px;
+        }
+        
+        .modal-footer {
+            padding: 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .admin-layout {
+                flex-direction: column;
+            }
+            
+            .admin-sidebar {
+                width: 100%;
+                padding: 10px 0;
+            }
+            
+            .sidebar-menu {
+                display: flex;
+                overflow-x: auto;
+                padding: 0 10px;
+            }
+            
+            .sidebar-menu li {
+                margin-bottom: 0;
+                margin-right: 5px;
+            }
+            
+            .sidebar-menu a {
+                border-radius: 25px;
+                margin: 0 5px;
+                white-space: nowrap;
+            }
+            
+            .table-responsive {
+                font-size: 0.9rem;
+            }
+            
+            th, td {
+                padding: 10px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <div class="admin-sidebar">
+            <div class="sidebar-header">
+                <h3>管理后台</h3>
+            </div>
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="/admin">
+                        <i class="bi bi-speedometer2"></i>
+                        <span>仪表板</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/articles">
+                        <i class="bi bi-file-earmark-text"></i>
+                        <span>文章管理</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/categories">
+                        <i class="bi bi-folder"></i>
+                        <span>分类管理</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/tags" class="active">
+                        <i class="bi bi-tags"></i>
+                        <span>标签管理</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="admin-header">
+                <h1>标签管理</h1>
+                <div>
+                    <button type="button" class="blog-btn" onclick="openCreateTagModal()">
+                        <i class="bi bi-plus-lg"></i> 新建标签
+                    </button>
+                </div>
+            </div>
+
+            <div class="admin-content">
+                <!-- Tags Table -->
+                <div class="tags-table fade-in">
+                    <div class="table-header">
+                        <h4 class="mb-0">标签列表</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th width="5%">ID</th>
+                                    <th width="30%">名称</th>
+                                    <th width="35%">描述</th>
+                                    <th width="20%">文章数</th>
+                                    <th width="10%">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="align-middle">1</td>
+                                    <td class="align-middle">技术</td>
+                                    <td class="align-middle">技术相关内容</td>
+                                    <td class="align-middle">12</td>
+                                    <td class="align-middle">
+                                        <div class="btn-group">
+                                            <button class="blog-btn blog-btn-secondary btn-sm">
+                                                <i class="bi bi-pencil"></i> 编辑
+                                            </button>
+                                            <button class="blog-btn blog-btn-secondary btn-sm">
+                                                <i class="bi bi-trash"></i> 删除
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle">2</td>
+                                    <td class="align-middle">生活</td>
+                                    <td class="align-middle">生活相关内容</td>
+                                    <td class="align-middle">5</td>
+                                    <td class="align-middle">
+                                        <div class="btn-group">
+                                            <button class="blog-btn blog-btn-secondary btn-sm">
+                                                <i class="bi bi-pencil"></i> 编辑
+                                            </button>
+                                            <button class="blog-btn blog-btn-secondary btn-sm">
+                                                <i class="bi bi-trash"></i> 删除
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle">3</td>
+                                    <td class="align-middle">Java</td>
+                                    <td class="align-middle">Java编程语言</td>
+                                    <td class="align-middle">8</td>
+                                    <td class="align-middle">
+                                        <div class="btn-group">
+                                            <button class="blog-btn blog-btn-secondary btn-sm">
+                                                <i class="bi bi-pencil"></i> 编辑
+                                            </button>
+                                            <button class="blog-btn blog-btn-secondary btn-sm">
+                                                <i class="bi bi-trash"></i> 删除
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Tag Cloud -->
+                <div class="tag-cloud-section fade-in">
+                    <h4>标签云</h4>
+                    <div class="tag-cloud">
+                        <span class="blog-tag">技术</span>
+                        <span class="blog-tag">生活</span>
+                        <span class="blog-tag">Java</span>
+                        <span class="blog-tag">Spring Boot</span>
+                        <span class="blog-tag">Web开发</span>
+                        <span class="blog-tag">数据库</span>
+                        <span class="blog-tag">前端</span>
+                        <span class="blog-tag">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Tag Modal -->
+    <div id="createTagModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>新建标签</h5>
+                <button type="button" class="blog-btn blog-btn-secondary btn-sm" onclick="closeCreateTagModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label class="blog-card-meta">标签名称</label>
+                        <input type="text" class="blog-form-control" id="tagName" placeholder="请输入标签名称">
+                    </div>
+                    <div class="mb-3">
+                        <label class="blog-card-meta">标签描述</label>
+                        <textarea class="blog-form-control" id="tagDescription" rows="3" placeholder="请输入标签描述"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="blog-btn blog-btn-secondary" onclick="closeCreateTagModal()">取消</button>
+                <button type="button" class="blog-btn">创建</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 添加页面加载动画
+        document.addEventListener('DOMContentLoaded', function() {
+            const table = document.querySelector('.tags-table');
+            const tagCloud = document.querySelector('.tag-cloud-section');
+            
+            table.style.opacity = '0';
+            table.style.transform = 'translateY(20px)';
+            
+            tagCloud.style.opacity = '0';
+            tagCloud.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                table.style.transition = 'all 0.5s ease';
+                table.style.opacity = '1';
+                table.style.transform = 'translateY(0)';
+            }, 100);
+            
+            setTimeout(() => {
+                tagCloud.style.transition = 'all 0.5s ease';
+                tagCloud.style.opacity = '1';
+                tagCloud.style.transform = 'translateY(0)';
+            }, 200);
+            
+            // 为标签添加点击效果
+            const tagItems = document.querySelectorAll('.blog-tag');
+            tagItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    // 添加点击动画
+                    this.style.transform = 'scale(1.2)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 300);
+                });
+            });
+        });
+        
+        // 打开创建标签模态框
+        function openCreateTagModal() {
+            document.getElementById('createTagModal').style.display = 'flex';
+        }
+        
+        // 关闭创建标签模态框
+        function closeCreateTagModal() {
+            document.getElementById('createTagModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
